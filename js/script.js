@@ -135,7 +135,7 @@ function createOption(row, isJob) {
     const iconSize = isJob ? "w-16 h-16" : "w-6 h-6";
     const colorClass = !isJob ? (value >= 0 ? "text-red-600" : "text-green-600") : "";
     const displayValue = value >= 0 ? `+${value}` : value;
-    const description = (currentMode === "soto" ? soto_descriptions[CURRENTLANG][name] : null) || descriptions[CURRENTLANG][name] || "";
+    const description = (currentMode === "soto" ? (soto_descriptions[CURRENTLANG][name] || "") : "") || descriptions[CURRENTLANG][name] || "";
 
     label.innerHTML = `
         <div class="flex items-center min-w-[150px]">
@@ -149,28 +149,24 @@ function createOption(row, isJob) {
     `;
 
     const input = label.querySelector("input");
-    // 툴팁 설정 (직업 + 특성)
+    // 툴팁 설정: SOTO 직업/특성 모두 마우스를 올리면 설명 표시
     if (description) {
         label.dataset.title = description;
         const tooltip = document.getElementById('custom-tooltip');
-
-        const moveTooltip = (e) => {
-            const gap = 14;
-            const rect = tooltip.getBoundingClientRect();
-            let left = e.clientX + gap;
-            let top = e.clientY + gap;
-            if (left + rect.width > window.innerWidth - 8) left = e.clientX - rect.width - gap;
-            if (top + rect.height > window.innerHeight - 8) top = e.clientY - rect.height - gap;
-            tooltip.style.left = Math.max(8, left) + 'px';
-            tooltip.style.top = Math.max(8, top) + 'px';
-        };
-
-        label.addEventListener('mouseenter', (e) => {
-            tooltip.innerHTML = label.dataset.title;
+        label.addEventListener('mouseenter', () => {
+            tooltip.innerHTML = (label.dataset.title || '').replace(/<br\s*\/?>(?=.)/gi, '<br>');
             tooltip.style.display = 'block';
-            moveTooltip(e);
         });
-        label.addEventListener('mousemove', moveTooltip);
+        label.addEventListener('mousemove', (e) => {
+            const pad = 15;
+            const rect = tooltip.getBoundingClientRect();
+            let x = e.clientX + pad;
+            let y = e.clientY + pad;
+            if (x + rect.width > window.innerWidth - 8) x = e.clientX - rect.width - pad;
+            if (y + rect.height > window.innerHeight - 8) y = e.clientY - rect.height - pad;
+            tooltip.style.left = x + 'px';
+            tooltip.style.top = y + 'px';
+        });
         label.addEventListener('mouseleave', () => {
             tooltip.style.display = 'none';
         });

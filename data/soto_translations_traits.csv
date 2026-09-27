@@ -1,136 +1,136 @@
 ﻿key,ko,en
-Stout,Stout,Stout
-Strong,Strong,Strong
-Feeble,Feeble,Feeble
-Weak,Weak,Weak
-Fit,Fit,Fit
-Athletic,Athletic,Athletic
-Out of Shape,Out of Shape,Out of Shape
-Unfit,Unfit,Unfit
-Taut,Taut,Taut
-Slack,Slack,Slack
+Stout,통통함,Stout
+Strong,튼튼함,Strong
+Feeble,연약함,Feeble
+Weak,약함,Weak
+Fit,건강한,Fit
+Athletic,육상 선수,Athletic
+Out of Shape,건강 이상,Out of Shape
+Unfit,비실함,Unfit
+Taut,팽팽함,Taut
+Slack,해이함,Slack
 Underweight,Underweight,Underweight
 Very Underweight,Very Underweight,Very Underweight
 Overweight,Overweight,Overweight
 Obese,Obese,Obese
-Jogger,Jogger,Jogger
-Sneaky,Sneaky,Sneaky
-Lightfooted,Lightfooted,Lightfooted
-Nimble,Agile,Agile
-Gymnast,Gymnast,Gymnast
-Fishing,Fishing,Fishing
-Gardener,Gardener,Gardener
-Hiker,Hiker,Hiker
-WildernessKnowledge,WildernessKnowledge,WildernessKnowledge
-Forager,Forager,Forager
-Trapper,Trapper,Trapper
+Jogger,조깅을 즐기는,Jogger
+Sneaky,비열함,Sneaky
+Lightfooted,조용한 발걸음,Lightfooted
+Nimble,재빠름,Agile
+Gymnast,체조선수,Gymnast
+Fishing,낚시꾼,Fishing
+Gardener,정원사,Gardener
+Hiker,도보 여행자,Hiker
+WildernessKnowledge,황야 지식,WildernessKnowledge
+Forager,채집가,Forager
+Trapper,함정꾼,Trapper
 Tracker,Tracker,Tracker
-MushroomPicker,Mushroom Picker,Mushroom Picker
-Entomologist,Entomologist,Entomologist
-Inventive,Inventive,Inventive
-FirstAid,FirstAid,FirstAid
-Tailor,Tailor,Tailor
-Cook,Cook,Cook
-Handy,Handy,Handy
-Blacksmith,Blacksmithing Basics,Blacksmithing Basics
-Whittler,Whittler,Whittler
+MushroomPicker,버섯 채집가,Mushroom Picker
+Entomologist,곤충학자,Entomologist
+Inventive,창의적,Inventive
+FirstAid,응급처치,FirstAid
+Tailor,재단술,Tailor
+Cook,요리,Cook
+Handy,능숙함,Handy
+Blacksmith,대장장이 기술,Blacksmithing Basics
+Whittler,조각가,Whittler
 Culinary,Culinary,Culinary
 Woodworker,Woodworker,Woodworker
-ElectricTech,Electrical-Technician,Electrical-Technician
-AutoMechanic,Auto Mechanic,Auto Mechanic
-MetalWelder,Metal Welder,Metal Welder
+ElectricTech,전기 기술자,Electrical-Technician
+AutoMechanic,자동차 정비공,Auto Mechanic
+MetalWelder,금속 용접공,Metal Welder
 Masonry,Masonry,Masonry
 Potter,Potter,Potter
 GlassBlower,Glassblower,Glassblower
 KnappingBasics,Knapping Basics,Knapping Basics
 AnimalFriend,Animal Friend,Animal Friend
 Slaughterer,Slaughterer,Slaughterer
-BaseballPlayer,BaseballPlayer,BaseballPlayer
-Stabber,Stabber,Stabber
+BaseballPlayer,야구선수,BaseballPlayer
+Stabber,자객,Stabber
 Smasher,Smasher,Smasher
-Cutter,Cutter,Cutter
-Spearman,Spearer,Spearer
-Swordsman,Fencer,Fencer
-Durab,Durability,Durability
-Shooter,Shooter,Shooter
-ExpShooter,Sharpshooter,Sharpshooter
-Hunter,Hunter,Hunter
-Formerscout,Formerscout,Formerscout
-Brawler,Brawler,Brawler
-Mechanics,Mechanics,Mechanics
-Herbalist,Herbalist,Herbalist
-GenExp,Generator Expert,Generator Expert
+Cutter,절단기,Cutter
+Spearman,창병,Spearer
+Swordsman,검객,Fencer
+Durab,내구성,Durability
+Shooter,사수,Shooter
+ExpShooter,명사수,Sharpshooter
+Hunter,사냥꾼,Hunter
+Formerscout,정찰병 경험,Formerscout
+Brawler,싸움꾼,Brawler
+Mechanics,정비,Mechanics
+Herbalist,약초꾼,Herbalist
+GenExp,발전기 전문가,Generator Expert
 CalmMinded,Calm-minded,Calm-minded
-MarathonRunner,Marathon Runner,Marathon Runner
+MarathonRunner,마라톤 주자,Marathon Runner
 Tireless,Tireless,Tireless
-BreathingTech2,Breathing Technique,Breathing Technique
-Asthmatic,Asthmatic,Asthmatic
-SpeedDemon,SpeedDemon,SpeedDemon
-SundayDriver,SundayDriver,SundayDriver
-ShortSighted,ShortSighted,ShortSighted
-EagleEyed,EagleEyed,EagleEyed
-NightVision,NightVision,NightVision
-KeenHearing,KeenHearing,KeenHearing
-HardOfHearing,HardOfHearing,HardOfHearing
-Deaf,Deaf,Deaf
-Inconspicuous,Inconspicuous,Inconspicuous
-Conspicuous,Conspicuous,Conspicuous
-AdrenalineJunkie,AdrenalineJunkie,AdrenalineJunkie
+BreathingTech2,호흡법,Breathing Technique
+Asthmatic,천식환자,Asthmatic
+SpeedDemon,속도광,SpeedDemon
+SundayDriver,초보 운전,SundayDriver
+ShortSighted,짧은 시야,ShortSighted
+EagleEyed,매의 눈,EagleEyed
+NightVision,고양이의 눈,NightVision
+KeenHearing,예민한 청력,KeenHearing
+HardOfHearing,어두운 귀,HardOfHearing
+Deaf,청각장애,Deaf
+Inconspicuous,부족한 존재감,Inconspicuous
+Conspicuous,넘치는 존재감,Conspicuous
+AdrenalineJunkie,아드레날린 중독,AdrenalineJunkie
 Desensitized2,Desensitized2,Desensitized2
-Brave,Brave,Brave
-Cowardly,Cowardly,Cowardly
-Graceful,Graceful,Graceful
-Clumsy,Clumsy,Clumsy
-FastReader,FastReader,FastReader
-SlowReader,SlowReader,SlowReader
-Illiterate,Illiterate,Illiterate
+Brave,용감한,Brave
+Cowardly,겁쟁이,Cowardly
+Graceful,우아함,Graceful
+Clumsy,덤벙댐,Clumsy
+FastReader,속독,FastReader
+SlowReader,정독,SlowReader
+Illiterate,문맹,Illiterate
 Lucky,Lucky,Lucky
 Unlucky,Unlucky,Unlucky
-Agoraphobic,Agoraphobic,Agoraphobic
-Claustrophobic,Claustrophobic,Claustrophobic
-Hemophobic,Hemophobic,Hemophobic
-FearoftheDark,Nyctophobic,Nyctophobic
-Nutritionist,Nutritionist,Nutritionist
-Outdoorsman,Outdoorsman,Outdoorsman
-FastLearner,FastLearner,FastLearner
-SlowLearner,SlowLearner,SlowLearner
-Cruelty,Cruel,Cruel
-Pacifist,Pacifist,Pacifist
-Crafty,Crafty,Crafty
-IronGut,IronGut,IronGut
-WeakStomach,WeakStomach,WeakStomach
-SensitiveDigestion,Sensitive Digestion,Sensitive Digestion
-Smoker,Smoker,Smoker
-SOAlcoholic,Alcoholic,Alcoholic
-LessSweaty,Low Sweating,Low Sweating
-HighSweaty,Excessive Sweating,Excessive Sweating
-Organized,Organized,Organized
-Disorganized,Disorganized,Disorganized
-StrongBack,Strong Back,Strong Back
-WeakBack,Weak Back,Weak Back
-Dextrous,Dextrous,Dextrous
-AllThumbs,AllThumbs,AllThumbs
-LiquidBlood,Thin-blooded,Thin-blooded
-ThickBlood,Thick-blooded,Thick-blooded
-LowThirst,LowThirst,LowThirst
-HighThirst,HighThirst,HighThirst
-LightEater,LightEater,LightEater
-HeartyAppetite,HeartyAppetite,HeartyAppetite
-FastHealer,FastHealer,FastHealer
-SlowHealer,SlowHealer,SlowHealer
-Resilient,Resilient,Resilient
-ProneToIllness,ProneToIllness,ProneToIllness
-ThickSkinned,ThickSkinned,ThickSkinned
-ThinSkinned,ThinSkinned,ThinSkinned
-NeedsLessSleep,NeedsLessSleep,NeedsLessSleep
-NeedsMoreSleep,NeedsMoreSleep,NeedsMoreSleep
-Insomniac,Insomniac,Insomniac
-OwlPerson,Owl,Owl
-LarkPerson,Lark,Lark
+Agoraphobic,광장 공포증,Agoraphobic
+Claustrophobic,밀실 공포증,Claustrophobic
+Hemophobic,피 공포증,Hemophobic
+FearoftheDark,어둠 공포증,Nyctophobic
+Nutritionist,영양사,Nutritionist
+Outdoorsman,등산애호가,Outdoorsman
+FastLearner,현자,FastLearner
+SlowLearner,느린 학습,SlowLearner
+Cruelty,잔혹함,Cruel
+Pacifist,평화주의자,Pacifist
+Crafty,재주꾼,Crafty
+IronGut,강철 위장,IronGut
+WeakStomach,소화불량,WeakStomach
+SensitiveDigestion,민감한 소화,Sensitive Digestion
+Smoker,골초,Smoker
+SOAlcoholic,알코올 중독자,Alcoholic
+LessSweaty,적은 발한,Low Sweating
+HighSweaty,과한 발한,Excessive Sweating
+Organized,정리쟁이,Organized
+Disorganized,비체계적인,Disorganized
+StrongBack,강한 허리,Strong Back
+WeakBack,약한 허리,Weak Back
+Dextrous,민첩한,Dextrous
+AllThumbs,서투른,AllThumbs
+LiquidBlood,묽은 피,Thin-blooded
+ThickBlood,진한 피,Thick-blooded
+LowThirst,낮은 갈증,LowThirst
+HighThirst,높은 갈증,HighThirst
+LightEater,소식가,LightEater
+HeartyAppetite,대식가,HeartyAppetite
+FastHealer,빠른 회복,FastHealer
+SlowHealer,느린 치유,SlowHealer
+Resilient,강한 회복력,Resilient
+ProneToIllness,질병에 취약함,ProneToIllness
+ThickSkinned,두꺼운 피부,ThickSkinned
+ThinSkinned,얇은 피부,ThinSkinned
+NeedsLessSleep,잠이 없는,NeedsLessSleep
+NeedsMoreSleep,잠꾸러기,NeedsMoreSleep
+Insomniac,수면장애,Insomniac
+OwlPerson,올빼미,Owl
+LarkPerson,종달새,Lark
 Optimist,Optimist,Optimist
 Depressive,Depressive,Depressive
 ChronicMigraine,Chronic Migraine,Chronic Migraine
-Snorer,Snorer,Snorer
-Allergic,Allergic,Allergic
-PanicAttacks,Panic Attacks,Panic Attacks
-SoreLegs,Sore Legs,Sore Legs
+Snorer,코골이,Snorer
+Allergic,알레르기,Allergic
+PanicAttacks,공황 발작,Panic Attacks
+SoreLegs,쓰린 다리,Sore Legs
