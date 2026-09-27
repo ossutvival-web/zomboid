@@ -149,18 +149,28 @@ function createOption(row, isJob) {
     `;
 
     const input = label.querySelector("input");
-    // 툴팁 설정
-    if (!isJob) {
+    // 툴팁 설정 (직업 + 특성)
+    if (description) {
         label.dataset.title = description;
         const tooltip = document.getElementById('custom-tooltip');
-        label.addEventListener('mouseenter', () => {
-            tooltip.textContent = label.getAttribute('data-title');
+
+        const moveTooltip = (e) => {
+            const gap = 14;
+            const rect = tooltip.getBoundingClientRect();
+            let left = e.clientX + gap;
+            let top = e.clientY + gap;
+            if (left + rect.width > window.innerWidth - 8) left = e.clientX - rect.width - gap;
+            if (top + rect.height > window.innerHeight - 8) top = e.clientY - rect.height - gap;
+            tooltip.style.left = Math.max(8, left) + 'px';
+            tooltip.style.top = Math.max(8, top) + 'px';
+        };
+
+        label.addEventListener('mouseenter', (e) => {
+            tooltip.innerHTML = label.dataset.title;
             tooltip.style.display = 'block';
+            moveTooltip(e);
         });
-        label.addEventListener('mousemove', (e) => {
-            tooltip.style.left = (e.clientX + 15) + 'px';
-            tooltip.style.top = (e.clientY + 15) + 'px';
-        });
+        label.addEventListener('mousemove', moveTooltip);
         label.addEventListener('mouseleave', () => {
             tooltip.style.display = 'none';
         });
