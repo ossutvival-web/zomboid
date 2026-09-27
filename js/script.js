@@ -119,11 +119,26 @@ function filterStats(dataset) {
     return customStats;
 }
 
+function normalizeLookupKey(value) {
+    return String(value ?? "").toLowerCase().replace(/[^a-z0-9]/g, "");
+}
+
+function lookupTranslation(map, key) {
+    if (!map) return "";
+    if (map[key]) return map[key];
+    const target = normalizeLookupKey(key);
+    for (const [k, value] of Object.entries(map)) {
+        if (normalizeLookupKey(k) === target && value) return value;
+    }
+    return "";
+}
+
 // ===== 옵션 생성 =====
 function createOption(row, isJob) {
     const name = row["항목"];
     const modeNames = isJob ? soto_tr_jobs : soto_tr_traits;
-    const displayName = (currentMode === "soto" ? modeNames[CURRENTLANG][name] : null) || (isJob ? tr_jobs[CURRENTLANG][name] : tr_traits[CURRENTLANG][name]) || name;
+    const baseNames = isJob ? tr_jobs : tr_traits;
+    const displayName = (currentMode === "soto" ? lookupTranslation(modeNames[CURRENTLANG], name) : "") || lookupTranslation(baseNames[CURRENTLANG], name) || name;
     const value = parseInt(row["값"]) || 0;
     const stats = parseStats(row.stats);
     const iconSrc = row.icon?.trim() || "default.png";
@@ -135,7 +150,7 @@ function createOption(row, isJob) {
     const iconSize = isJob ? "w-16 h-16" : "w-6 h-6";
     const colorClass = !isJob ? (value >= 0 ? "text-red-600" : "text-green-600") : "";
     const displayValue = value >= 0 ? `+${value}` : value;
-    const description = (currentMode === "soto" ? (soto_descriptions[CURRENTLANG][name] || "") : "") || descriptions[CURRENTLANG][name] || "";
+    const description = (currentMode === "soto" ? lookupTranslation(soto_descriptions[CURRENTLANG], name) : "") || lookupTranslation(descriptions[CURRENTLANG], name) || "";
 
     label.innerHTML = `
         <div class="flex items-center min-w-[150px]">

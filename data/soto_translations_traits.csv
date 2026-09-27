@@ -41,9 +41,9 @@ AutoMechanic,자동차 정비공,Auto Mechanic
 MetalWelder,금속 용접공,Metal Welder
 Masonry,Masonry,Masonry
 Potter,Potter,Potter
-GlassBlower,Glassblower,Glassblower
-KnappingBasics,Knapping Basics,Knapping Basics
-AnimalFriend,Animal Friend,Animal Friend
+GlassBlower,GlassBlower,Glassblower
+KnappingBasics,KnappingBasics,Knapping Basics
+AnimalFriend,AnimalFriend,Animal Friend
 Slaughterer,Slaughterer,Slaughterer
 BaseballPlayer,야구선수,BaseballPlayer
 Stabber,자객,Stabber
@@ -60,7 +60,7 @@ Brawler,싸움꾼,Brawler
 Mechanics,정비,Mechanics
 Herbalist,약초꾼,Herbalist
 GenExp,발전기 전문가,Generator Expert
-CalmMinded,Calm-minded,Calm-minded
+CalmMinded,CalmMinded,Calm-minded
 MarathonRunner,마라톤 주자,Marathon Runner
 Tireless,Tireless,Tireless
 BreathingTech2,호흡법,Breathing Technique
@@ -129,7 +129,7 @@ OwlPerson,올빼미,Owl
 LarkPerson,종달새,Lark
 Optimist,Optimist,Optimist
 Depressive,Depressive,Depressive
-ChronicMigraine,Chronic Migraine,Chronic Migraine
+ChronicMigraine,ChronicMigraine,Chronic Migraine
 Snorer,코골이,Snorer
 Allergic,알레르기,Allergic
 PanicAttacks,공황 발작,Panic Attacks
