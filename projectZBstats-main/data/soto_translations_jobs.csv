@@ -1,0 +1,54 @@
+﻿key,ko,en
+unemployed,백수,Unemployed
+fireofficer,소방관,fireofficer
+policeofficer,경찰관,policeofficer
+parkranger,공원 경비원,parkranger
+constructionworker,건축 인부,constructionworker
+securityguard,보안 경비원,securityguard
+carpenter,목수,carpenter
+burglar,좀도둑,burglar
+chef,주방장,chef
+repairman,DIY 전문가,repairman
+rancher,축산업자,rancher
+farmer,농부,farmer
+fisherman,어부,fisherman
+doctor,의사,doctor
+veteran,퇴역 군인,veteran
+nurse,간호사,nurse
+lumberjack,벌목꾼,lumberjack
+fitnessInstructor,fitnessInstructor,fitnessInstructor
+burgerflipper,햄버거 조리사,burgerflipper
+electrician,전기 기사,electrician
+engineer,기술자,engineer
+metalworker,용접공,metalworker
+smither,대장장이,smither
+mechanics,자동차 정비공,mechanics
+tailorProfession,재단사,Tailor
+tailorocc,재단사,Tailor
+deliverymanocc,배달원,Deliveryman
+loaderocc,하역 작업자,Loader
+truckerocc,트럭 운전기사,Truck Driver
+soldierocc,군인,Soldier
+botanistocc,식물학자,Botanist
+gravemanocc,묘지 관리인,Gravedigger
+dancerocc,댄서,Dancer
+priestocc,성직자,Priest
+heavyathinstructorocc,역도 강사,Weightlifting Instructor
+detectiveocc,탐정,Detective
+teacherocc,교사,School Teacher
+cleanermanocc,청소부,Janitor
+stuntmanocc,스턴트맨,Stuntman
+gasstationoperatorocc,주유소 직원,Gas Station Operator
+campcounsocc,캠프 상담원,Camp Counselor
+dragracerocc,드래그 레이서,Drag Racer
+junkyardworkerocc,고물상 작업자,Junkyard Worker
+lifeguardocc,인명 구조원,Lifeguard
+demoworkerocc,철거 작업자,Demolition Worker
+butcherocc,정육점 직원,Butcher
+paparazziocc,파파라치,Paparazzi
+minerocc,광부,Miner
+cashierocc,매장 직원,Store Employee
+criminalocc,범죄자,Criminal
+animalcontrolofficerocc,동물 관리원,Animal Control Officer
+hunterocc,사냥꾼,Huntsman
+veterinarianocc,수의사,Veterinarian

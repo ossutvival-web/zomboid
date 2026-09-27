@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Project Zomboid B42 calculator</title>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="프로젝트 좀보이드 특성 계산기">
+  <meta property="og:description" content="프로젝트 좀보이드 특성 및 직업 포인트 계산기">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html-to-image@1.11.13/dist/html-to-image.js"></script>
+
+  <link rel="icon" type="image/png" href="icons/Trait_fastlearner.png">
+  <style>
+    body {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none
+    }
+
+    .gh-logo {
+      height: 1em;
+      background-color: white;
+    }
+
+    #custom-tooltip {
+      background-color: #333;
+      color: #fff;
+      padding: 6px 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      white-space: nowrap; 
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-dvh">
+  <div class="bg-white p-6 rounded-2xl shadow-xl w-11/12 max-w-7xl h-[95vh] overflow-hidden flex">
+    <!-- 왼쪽 -->
+    <div class="flex-1 flex flex-col min-h-0">
+      <!-- 상단 고정 -->
+      <div class="sticky top-0 bg-white z-10 p-4 rounded-2xl shadow-md">
+        <h2 class="flex items-center justify-center gap-2 text-2xl font-bold mb-2">
+          <a href="https://github.com/amature0000/projectZBstats"><img src="icons/GitHub_Invertocat_Black.svg"
+              class="w-8 h-8"></a>
+          <span id="title_placeholder"></span>
+        </h2><br>
+        <div class="flex justify-between items-center mb-4">
+
+          <!-- 언어 선택 - disabled --> 
+          <!-- <div class="flex space-x-2">
+            <button id="lang-ko" class="px-4 py-2 bg-gray-200 rounded">
+              한국어
+            </button>
+            <button id="lang-en" class="px-4 py-2 bg-gray-200 rounded">
+              English
+            </button>
+          </div> -->
+
+          <!-- 저장된 빌드 + Load + Reset -->
+          <div class="flex items-center gap-2">
+
+            <select id="build-list"
+              class="w-56 px-3 py-2 border rounded-lg bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <option id="build-list_placeholder" value=""></option>
+            </select>
+
+            <button id="load-btn"
+              class="px-4 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition-colors">
+            </button>
+            <button id="del-btn"
+              class="px-4 py-2 bg-gray-600 text-white rounded-lg shadow hover:bg-gray-700 transition-colors">
+            </button>
+
+
+            <button id="rst-btn"
+              class="px-4 py-2 bg-red-600 text-white rounded-lg shadow hover:bg-red-700 transition-colors">
+            </button>
+
+            <button id="bat-btn"
+              class="px-4 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition-colors">
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="flex justify-center gap-2 mt-3 mb-1">
+        <button id="mode-vanilla" class="px-4 py-2 rounded-lg border bg-gray-800 text-white">바닐라</button>
+        <button id="mode-soto" class="px-4 py-2 rounded-lg border bg-white text-gray-800">SOTO</button>
+      </div>
+
+      <!-- 직업 + 특성 -->
+      <div class="flex space-x-6 mt-4 flex-1 min-h-0">
+        <!-- 직업 -->
+        <div class="flex-1 flex flex-col min-w-[250px] min-h-0">
+          <h3 class="text-lg font-bold text-center mb-2" id="job_placeholder"></h3>
+          <div class="flex-1 border rounded-xl p-2 shadow bg-gray-50 overflow-y-auto">
+            <div id="jobs" class="grid grid-cols-1 lg:grid-cols-2 gap-2"></div>
+          </div>
+        </div>
+
+        <!-- 특성 -->
+        <div class="flex-1 flex flex-col min-w-[350px] min-h-0">
+          <h3 class="text-lg font-bold text-center mb-2" id="trait_placeholder"></h3>
+          <div class="flex-1 border rounded-xl p-2 shadow bg-gray-50 overflow-y-auto">
+            <div class="flex space-x-4">
+              <div id="negative-items" class="flex flex-col space-y-2 flex-1"></div>
+              <div id="positive-items" class="flex flex-col space-y-2 flex-1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 결과 패널 -->
+    <div id="result-panel" class="flex flex-col space-y-4 w-32 ml-6 min-w-[150px]">
+      <button id="open-preview" class="px-4 py-2 bg-blue-600 text-white rounded-xl shadow hover:bg-blue-700">
+      </button>
+
+      <div id="result-sum" class="p-4 border rounded-xl bg-white shadow text-xl font-bold text-center text-green-600">
+      </div>
+      <div id="result-strength" class="px-4 py-2 border rounded-xl bg-white shadow text-lg font-semibold text-center">
+      </div>
+      <div id="result-fitness" class="px-4 py-2 border rounded-xl bg-white shadow text-lg font-semibold text-center">
+      </div>
+    </div>
+  </div>
+  <div id="preview-modal" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50">
+
+    <div class="bg-white rounded-2xl shadow-2xl w-[700px] max-h-[90vh] overflow-auto p-6">
+
+      <div class="flex justify-between items-center mb-4">
+        <div class="flex justify-end gap-3 mt-6">
+          <input id="build-name" type="text" placeholder="Build name"
+            class="w-56 px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+          <button id="close-preview" class="px-4 py-2 border rounded">
+          </button>
+          <button id="save-preview" class="px-4 py-2 bg-blue-600 text-white rounded">
+          </button>
+          <button id="download-preview" class="px-4 py-2 bg-blue-600 text-white rounded">
+          </button>
+        </div>
+      </div>
+
+      <div id="preview-content" class="bg-white border rounded-xl p-6 space-y-6"></div>
+    </div>
+  </div>
+  <!-- 툴팁 박스 -->
+  <div id="custom-tooltip" style="display: none; position: fixed; pointer-events: none; z-index: 9999;"></div>
+  <script src="js/batmaker.js"></script>
+  <script src="js/cache.js"></script>
+  <script src="js/urlparams.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/rendermodal.js"></script>
+</body>
+
+</html>

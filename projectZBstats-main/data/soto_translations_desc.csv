@@ -1,0 +1,136 @@
+﻿key,ko,en
+Stout,,
+Strong,,
+Feeble,,
+Weak,,
+Fit,,
+Athletic,,
+Out of Shape,,
+Unfit,,
+Taut,,
+Slack,,
+Underweight,,
+Very Underweight,,
+Overweight,,
+Obese,,
+Jogger,,
+Sneaky,,
+Lightfooted,,
+Nimble,,
+Gymnast,,
+Fishing,,
+Gardener,Knows some agriculture recipes.,Knows some agriculture recipes.
+Hiker,"Experienced in hiking long distances.<br>Knows some trapping recipes.<br>(Slightly reduces accumulation of hunger, thirst and fatigue if walking for a while without stopping.)","Experienced in hiking long distances.<br>Knows some trapping recipes.<br>(Slightly reduces accumulation of hunger, thirst and fatigue if walking for a while without stopping.)"
+WildernessKnowledge,,
+Forager,,
+Trapper,Knows some trapping recipes.,Knows some trapping recipes.
+Tracker,,
+MushroomPicker,Increases chance to find mushrooms in Search mode.,Increases chance to find mushrooms in Search mode.
+Entomologist,Increases chance to find insects in Search mode.,Increases chance to find insects in Search mode.
+Inventive,,
+FirstAid,,
+Tailor,Knows some tailoring recipes.,Knows some tailoring recipes.
+Cook,,
+Handy,,
+Blacksmith,Knows some blacksmithing recipes.,Knows some blacksmithing recipes.
+Whittler,Knows some carving recipes.,Knows some carving recipes.
+Culinary,Knows some cooking recipes.,Knows some cooking recipes.
+Woodworker,,
+ElectricTech,Knows some electrical recipes.,Knows some electrical recipes.
+AutoMechanic,,
+MetalWelder,Knows some metalworking recipes.,Knows some metalworking recipes.
+Masonry,,
+Potter,,
+GlassBlower,Knows some glassmaking recipes.,Knows some glassmaking recipes.
+KnappingBasics,Knows some knapping recipes.,Knows some knapping recipes.
+AnimalFriend,,
+Slaughterer,,
+BaseballPlayer,,
+Stabber,,
+Smasher,,
+Cutter,,
+Spearman,,
+Swordsman,,
+Durab,,
+Shooter,,
+ExpShooter,,
+Hunter,,
+Formerscout,,
+Brawler,Used to getting in trouble.<br>Successful attacks in melee have a chance to reduce unhappiness.<br>Knows some improvised weapons recipes.,Used to getting in trouble.<br>Successful attacks in melee have a chance to reduce unhappiness.<br>Knows some improvised weapons recipes.
+Mechanics,Knows how to service and repair standard and heavy vehicles.,Knows how to service and repair standard and heavy vehicles.
+Herbalist,,
+GenExp,Knows how to operate and repair generators.<br>(Repairing a generator increases its condition by an additional 5%.),Knows how to operate and repair generators.<br>(Repairing a generator increases its condition by an additional 5%.)
+CalmMinded,"Stays calm in any situation.<br>(Maximum stress cannot exceed 50%,<br>Stress and panic decrease faster.)","Stays calm in any situation.<br>(Maximum stress cannot exceed 50%,<br>Stress and panic decrease faster.)"
+MarathonRunner,Increases endurance recovery while running.<br>(Does not affect running while sneaking.),Increases endurance recovery while running.<br>(Does not affect running while sneaking.)
+Tireless,Has a small chance to partially recover endurance after a successful weapon attack.<br>Muscle strain recovers faster.,Has a small chance to partially recover endurance after a successful weapon attack.<br>Muscle strain recovers faster.
+BreathingTech2,Increases endurance recovery while not moving.<br>(More effective while sitting.),Increases endurance recovery while not moving.<br>(More effective while sitting.)
+Asthmatic,,
+SpeedDemon,,
+SundayDriver,,
+ShortSighted,,
+EagleEyed,,
+NightVision,,
+KeenHearing,,
+HardOfHearing,,
+Deaf,,
+Inconspicuous,,
+Conspicuous,,
+AdrenalineJunkie,,
+Desensitized2,,
+Brave,,
+Cowardly,,
+Graceful,,
+Clumsy,,
+FastReader,,
+SlowReader,,
+Illiterate,,
+Lucky,,
+Unlucky,,
+Agoraphobic,,
+Claustrophobic,,
+Hemophobic,Panic when performing first aid on self and butchering animals. <br>Cannot perform first aid on others.<br>Gets stressed and unhappy when covered in blood.,Panic when performing first aid on self and butchering animals. <br>Cannot perform first aid on others.<br>Gets stressed and unhappy when covered in blood.
+FearoftheDark,Fear of the dark. Panic without light sources.<br>Being in the dark for a long time also increases stress.,Fear of the dark. Panic without light sources.<br>Being in the dark for a long time also increases stress.
+Nutritionist,,
+Outdoorsman,,
+FastLearner,,
+SlowLearner,,
+Cruelty,"Increases combat XP gains.<br>(+25% XP for all weapon skills, Maintenance skill and Aiming skill.)","Increases combat XP gains.<br>(+25% XP for all weapon skills, Maintenance skill and Aiming skill.)"
+Pacifist,"Decreases combat XP gains.<br>(-25% XP for all weapon skills, Maintenance skill and Aiming skill.)","Decreases combat XP gains.<br>(-25% XP for all weapon skills, Maintenance skill and Aiming skill.)"
+Crafty,,
+IronGut,,
+WeakStomach,,
+SensitiveDigestion,"Experiences stomach discomfort, pain, and nausea when overeating.<br>(The higher the fullness, the stronger the discomfort, pain, and nausea.)","Experiences stomach discomfort, pain, and nausea when overeating.<br>(The higher the fullness, the stronger the discomfort, pain, and nausea.)"
+Smoker,"Has a tobacco addiction.<br>Smoking tobacco reduces stress, unhappiness, and hunger.<br>Abstaining from smoking increases stress, unhappiness, and hunger.<br>May cough, attracting unwanted attention.<br>Slightly increases endurance loss while running or fighting.","Has a tobacco addiction.<br>Smoking tobacco reduces stress, unhappiness, and hunger.<br>Abstaining from smoking increases stress, unhappiness, and hunger.<br>May cough, attracting unwanted attention.<br>Slightly increases endurance loss while running or fighting."
+SOAlcoholic,"Has an alcohol addiction.<br>Abstaining from alcohol increases boredom, unhappiness, and thirst.<br>Prolonged abstinence increases fatigue, stress, headache, and nausea.<br>Alcohol's effect on drowsiness is reduced.","Has an alcohol addiction.<br>Abstaining from alcohol increases boredom, unhappiness, and thirst.<br>Prolonged abstinence increases fatigue, stress, headache, and nausea.<br>Alcohol's effect on drowsiness is reduced."
+LessSweaty,Reduces wetness generated.<br>(May be less effective while under rain.),Reduces wetness generated.<br>(May be less effective while under rain.)
+HighSweaty,"Increases wetness generated.<br>(Sweating increases during combat, running or doing fitness.)","Increases wetness generated.<br>(Sweating increases during combat, running or doing fitness.)"
+Organized,,
+Disorganized,,
+StrongBack,Increases carry weight.<br>(Plus 1-2 carry weight depending on Strength level.),Increases carry weight.<br>(Plus 1-2 carry weight depending on Strength level.)
+WeakBack,Reduces carry weight.<br>(Minus 1-3 carry weight depending on Strength level.),Reduces carry weight.<br>(Minus 1-3 carry weight depending on Strength level.)
+Dextrous,Transfers inventory items quickly.<br>(-50% inventory transferring time. Faster actions.),Transfers inventory items quickly.<br>(-50% inventory transferring time. Faster actions.)
+AllThumbs,Transfers inventory items slowly.<br>(+50% inventory transferring time. Slower actions.),Transfers inventory items slowly.<br>(+50% inventory transferring time. Slower actions.)
+LiquidBlood,Wounds bleeds more.<br>(+100% damage from bleeding.),Wounds bleeds more.<br>(+100% damage from bleeding.)
+ThickBlood,Wounds bleeds less.<br>(-50% damage from bleeding.),Wounds bleeds less.<br>(-50% damage from bleeding.)
+LowThirst,,
+HighThirst,,
+LightEater,,
+HeartyAppetite,,
+FastHealer,,
+SlowHealer,,
+Resilient,,
+ProneToIllness,"More prone to disease. May accidentally catch a cold.<br>Faster rate of zombification.<br>(+25% zombification speed, +70% chance of catching a cold,<br>+20% cold strength, +50% cold progression speed,<br>has a negligible chance of catching a cold while outside.)","More prone to disease. May accidentally catch a cold.<br>Faster rate of zombification.<br>(+25% zombification speed, +70% chance of catching a cold,<br>+20% cold strength, +50% cold progression speed,<br>has a negligible chance of catching a cold while outside.)"
+ThickSkinned,,
+ThinSkinned,,
+NeedsLessSleep,,
+NeedsMoreSleep,,
+Insomniac,,
+OwlPerson,"Prefers to stay awake in the evenings.<br>(Fatigue gains more slowly in the evening (05:00 p.m. - 10:00 p.m.),<br>but faster in the morning (05:00 a.m. - 10:00 a.m.)).","Prefers to stay awake in the evenings.<br>(Fatigue gains more slowly in the evening (05:00 p.m. - 10:00 p.m.),<br>but faster in the morning (05:00 a.m. - 10:00 a.m.))."
+LarkPerson,"Prefers to be awake in the morning.<br>(Fatigue gains more slowly in the morning (05:00 a.m. - 10:00 a.m.),<br>but faster in the evening (05:00 p.m. - 10:00 p.m.)).","Prefers to be awake in the morning.<br>(Fatigue gains more slowly in the morning (05:00 a.m. - 10:00 a.m.),<br>but faster in the evening (05:00 p.m. - 10:00 p.m.))."
+Optimist,Less bored. May not be depressed for a long time.<br>(-50% passive boredom generation.<br>Maximum Unhappiness level cannot exceed 50% for 48 hours.),Less bored. May not be depressed for a long time.<br>(-50% passive boredom generation.<br>Maximum Unhappiness level cannot exceed 50% for 48 hours.)
+Depressive,"Often sad. May become depressed for no reason.<br>Bad mood can affect productivity.<br>(Unhappiness builds up over time.<br>Sudden depression may occur once every few days.<br>Reduces XP gain in all skills depending on<br>Unhappiness moodle, up to -10%.)","Often sad. May become depressed for no reason.<br>Bad mood can affect productivity.<br>(Unhappiness builds up over time.<br>Sudden depression may occur once every few days.<br>Reduces XP gain in all skills depending on<br>Unhappiness moodle, up to -10%.)"
+ChronicMigraine,Experiences frequent headaches.,Experiences frequent headaches.
+Snorer,"Snores loudly during sleep, attracting unwanted attention.","Snores loudly during sleep, attracting unwanted attention."
+Allergic,"Sneezes involuntarily, attracting unwanted attention.<br>(Sneezes can be muffled with a tissue, handkerchief, or toilet paper.)","Sneezes involuntarily, attracting unwanted attention.<br>(Sneezes can be muffled with a tissue, handkerchief, or toilet paper.)"
+PanicAttacks,Suffers from sudden panic attacks.<br>Panic passes slower.<br>(May wake up from a panic attack.<br>Panic attacks become less frequent with survived time.),Suffers from sudden panic attacks.<br>Panic passes slower.<br>(May wake up from a panic attack.<br>Panic attacks become less frequent with survived time.)
+SoreLegs,"Experiences pain in the legs when walking, running, sprinting, doing fitness and stomping.<br>While sprinting, the pain and endurance consumption is much higher.<br>(Sprinting level reduces pain while running and sprinting.<br>Lightfooted level reduces walking and stomping pain.)","Experiences pain in the legs when walking, running, sprinting, doing fitness and stomping.<br>While sprinting, the pain and endurance consumption is much higher.<br>(Sprinting level reduces pain while running and sprinting.<br>Lightfooted level reduces walking and stomping pain.)"

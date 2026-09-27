@@ -1,0 +1,136 @@
+﻿key,ko,en
+Stout,Stout,Stout
+Strong,Strong,Strong
+Feeble,Feeble,Feeble
+Weak,Weak,Weak
+Fit,Fit,Fit
+Athletic,Athletic,Athletic
+Out of Shape,Out of Shape,Out of Shape
+Unfit,Unfit,Unfit
+Taut,Taut,Taut
+Slack,Slack,Slack
+Underweight,Underweight,Underweight
+Very Underweight,Very Underweight,Very Underweight
+Overweight,Overweight,Overweight
+Obese,Obese,Obese
+Jogger,Jogger,Jogger
+Sneaky,Sneaky,Sneaky
+Lightfooted,Lightfooted,Lightfooted
+Nimble,Agile,Agile
+Gymnast,Gymnast,Gymnast
+Fishing,Fishing,Fishing
+Gardener,Gardener,Gardener
+Hiker,Hiker,Hiker
+WildernessKnowledge,WildernessKnowledge,WildernessKnowledge
+Forager,Forager,Forager
+Trapper,Trapper,Trapper
+Tracker,Tracker,Tracker
+MushroomPicker,Mushroom Picker,Mushroom Picker
+Entomologist,Entomologist,Entomologist
+Inventive,Inventive,Inventive
+FirstAid,FirstAid,FirstAid
+Tailor,Tailor,Tailor
+Cook,Cook,Cook
+Handy,Handy,Handy
+Blacksmith,Blacksmithing Basics,Blacksmithing Basics
+Whittler,Whittler,Whittler
+Culinary,Culinary,Culinary
+Woodworker,Woodworker,Woodworker
+ElectricTech,Electrical-Technician,Electrical-Technician
+AutoMechanic,Auto Mechanic,Auto Mechanic
+MetalWelder,Metal Welder,Metal Welder
+Masonry,Masonry,Masonry
+Potter,Potter,Potter
+GlassBlower,Glassblower,Glassblower
+KnappingBasics,Knapping Basics,Knapping Basics
+AnimalFriend,Animal Friend,Animal Friend
+Slaughterer,Slaughterer,Slaughterer
+BaseballPlayer,BaseballPlayer,BaseballPlayer
+Stabber,Stabber,Stabber
+Smasher,Smasher,Smasher
+Cutter,Cutter,Cutter
+Spearman,Spearer,Spearer
+Swordsman,Fencer,Fencer
+Durab,Durability,Durability
+Shooter,Shooter,Shooter
+ExpShooter,Sharpshooter,Sharpshooter
+Hunter,Hunter,Hunter
+Formerscout,Formerscout,Formerscout
+Brawler,Brawler,Brawler
+Mechanics,Mechanics,Mechanics
+Herbalist,Herbalist,Herbalist
+GenExp,Generator Expert,Generator Expert
+CalmMinded,Calm-minded,Calm-minded
+MarathonRunner,Marathon Runner,Marathon Runner
+Tireless,Tireless,Tireless
+BreathingTech2,Breathing Technique,Breathing Technique
+Asthmatic,Asthmatic,Asthmatic
+SpeedDemon,SpeedDemon,SpeedDemon
+SundayDriver,SundayDriver,SundayDriver
+ShortSighted,ShortSighted,ShortSighted
+EagleEyed,EagleEyed,EagleEyed
+NightVision,NightVision,NightVision
+KeenHearing,KeenHearing,KeenHearing
+HardOfHearing,HardOfHearing,HardOfHearing
+Deaf,Deaf,Deaf
+Inconspicuous,Inconspicuous,Inconspicuous
+Conspicuous,Conspicuous,Conspicuous
+AdrenalineJunkie,AdrenalineJunkie,AdrenalineJunkie
+Desensitized2,Desensitized2,Desensitized2
+Brave,Brave,Brave
+Cowardly,Cowardly,Cowardly
+Graceful,Graceful,Graceful
+Clumsy,Clumsy,Clumsy
+FastReader,FastReader,FastReader
+SlowReader,SlowReader,SlowReader
+Illiterate,Illiterate,Illiterate
+Lucky,Lucky,Lucky
+Unlucky,Unlucky,Unlucky
+Agoraphobic,Agoraphobic,Agoraphobic
+Claustrophobic,Claustrophobic,Claustrophobic
+Hemophobic,Hemophobic,Hemophobic
+FearoftheDark,Nyctophobic,Nyctophobic
+Nutritionist,Nutritionist,Nutritionist
+Outdoorsman,Outdoorsman,Outdoorsman
+FastLearner,FastLearner,FastLearner
+SlowLearner,SlowLearner,SlowLearner
+Cruelty,Cruel,Cruel
+Pacifist,Pacifist,Pacifist
+Crafty,Crafty,Crafty
+IronGut,IronGut,IronGut
+WeakStomach,WeakStomach,WeakStomach
+SensitiveDigestion,Sensitive Digestion,Sensitive Digestion
+Smoker,Smoker,Smoker
+SOAlcoholic,Alcoholic,Alcoholic
+LessSweaty,Low Sweating,Low Sweating
+HighSweaty,Excessive Sweating,Excessive Sweating
+Organized,Organized,Organized
+Disorganized,Disorganized,Disorganized
+StrongBack,Strong Back,Strong Back
+WeakBack,Weak Back,Weak Back
+Dextrous,Dextrous,Dextrous
+AllThumbs,AllThumbs,AllThumbs
+LiquidBlood,Thin-blooded,Thin-blooded
+ThickBlood,Thick-blooded,Thick-blooded
+LowThirst,LowThirst,LowThirst
+HighThirst,HighThirst,HighThirst
+LightEater,LightEater,LightEater
+HeartyAppetite,HeartyAppetite,HeartyAppetite
+FastHealer,FastHealer,FastHealer
+SlowHealer,SlowHealer,SlowHealer
+Resilient,Resilient,Resilient
+ProneToIllness,ProneToIllness,ProneToIllness
+ThickSkinned,ThickSkinned,ThickSkinned
+ThinSkinned,ThinSkinned,ThinSkinned
+NeedsLessSleep,NeedsLessSleep,NeedsLessSleep
+NeedsMoreSleep,NeedsMoreSleep,NeedsMoreSleep
+Insomniac,Insomniac,Insomniac
+OwlPerson,Owl,Owl
+LarkPerson,Lark,Lark
+Optimist,Optimist,Optimist
+Depressive,Depressive,Depressive
+ChronicMigraine,Chronic Migraine,Chronic Migraine
+Snorer,Snorer,Snorer
+Allergic,Allergic,Allergic
+PanicAttacks,Panic Attacks,Panic Attacks
+SoreLegs,Sore Legs,Sore Legs

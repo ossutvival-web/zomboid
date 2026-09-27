@@ -1,0 +1,83 @@
+항목,값,icon,stats,금지항목
+speeddemon,-1,icons/Trait_speeddemon.png,,sundaydriver
+artisan,-2,icons/Trait_artisan.png,Glassmaking:1;Pottery:1,
+dextrous,-2,icons/Trait_dextrous.png,,allthumbs
+fastreader,-2,icons/Trait_fastreader.png,,slowreader;illiterate
+firstaid,-2,icons/Trait_firstaid.png,FirstAid:1,
+gardener,-2,icons/Trait_gardener.png,Agriculture:1,
+inventive,-2,icons/Trait_inventive.png,,
+irongut,-2,icons/Trait_irongut.png,,weakstomach
+lighteater,-2,icons/Trait_lighteater.png,,heartyappetite;Obese
+lowthirst,-2,icons/Trait_lowthirst.png,,highthirst
+mason,-2,icons/Trait_mason.png,Masonry:2,
+nutritionist,-2,icons/Trait_nutritionist.png,,
+outdoorsman,-2,icons/Trait_outdoorsman.png,,
+whittler,-2,icons/Trait_whittler.png,Carving:2,
+nightvision,-3,icons/Trait_nightvision.png,,
+crafty,-3,icons/Trait_default.png,,fastlearner;slowlearner
+cook,-3,icons/Trait_cook.png,Cooking:2;Butchering:1,
+mechanics,-3,icons/Trait_mechanics.png,Vehicle:1,
+needslesssleep,-3,icons/Trait_needslesssleep.png,,needsmoresleep
+adrenalinejunkie,-4,icons/Trait_adrenalinejunkie.png,,claustrophobic;agoraphobic;cowardly;Desensitized
+fishing,-4,icons/Trait_fishing.png,Fishing:1,
+baseballplayer,-4,icons/Trait_baseballplayer.png,LongBlunt:1,
+brave,-4,icons/Trait_brave.png,,cowardly;agoraphobic;claustrophobic;Desensitized
+eagleeyed,-4,icons/Trait_eagleeyed.png,,shortsighted
+graceful,-4,icons/Trait_graceful.png,,clumsy
+herbalist,-4,icons/Trait_herbalist.png,Foraging:1,
+inconspicuous,-4,icons/Trait_inconspicuous.png,,conspicuous
+organized,-4,icons/Trait_organized.png,,disorganized
+resilient,-4,icons/Trait_resilient.png,,pronetoillness
+jogger,-4,icons/Trait_jogger.png,Running:1,
+tailor,-4,icons/Trait_tailor.png,Tailoring:1,
+tinkerer,-4,icons/Trait_tinkerer.png,Maintenance:1,
+gymnast,-5,icons/Trait_gymnast.png,Lightfooted:1;Nimble:1,
+hiker,-5,icons/Trait_hiker.png,Foraging:1;Trapping:1,
+target_shooter,-5,icons/Trait_target_shooter.png,Aiming:1,
+blacksmith,-6,icons/Trait_blacksmith.png,Maintenance:1;Blacksmith:2,
+brawler,-6,icons/Trait_brawler.png,LongBlunt:1;Axe:1,
+fasthealer,-6,icons/Trait_fasthealer.png,,slowhealer
+fastlearner,-6,icons/Trait_fastlearner.png,,crafty;slowlearner
+fit,-6,icons/Trait_fit.png,fit:2,Obese;athletic;out of shape;unfit;Overweight;weightgain
+formerscout,-6,icons/Trait_formerscout.png,FirstAid:1;Foraging:1;Fishing:1,
+keenhearing,-6,icons/Trait_keenhearing.png,,deaf;hardofhearing
+stout,-6,icons/Trait_stout.png,str:2,weak;feeble;strong
+handy,-8,icons/Trait_handy.png,Maintenance:1;Carving:1;Carpentry:1;Masonry:1,
+hunter,-8,icons/Trait_hunter.png,Butchering:1;ShortBlade:1;Aiming:1;Trapping:1;Sneaking:1,
+thickskinned,-8,icons/Trait_thickskinned.png,,thinskinned
+wildernessknowledge,-8,icons/Trait_wildernessknowledge.png,Knapping:1;Foraging:1;Maintenance:1;Carving:1,
+athletic,-10,icons/Trait_athletic.png,fit:4,Overweight;weightgain;fit;Obese;out of shape;unfit;Very Underweight;smoker
+strong,-10,icons/Trait_strong.png,str:4,weak;feeble;stout
+
+sundaydriver,1,icons/Trait_sundaydriver.png,,speeddemon
+allthumbs,2,icons/Trait_allthumbs.png,,dextrous
+clumsy,2,icons/Trait_clumsy.png,,graceful
+cowardly,2,icons/Trait_cowardly.png,,brave;Desensitized;adrenalinejunkie
+weightloss,2,icons/Trait_emaciated.png,fit:-1,weightgain;Overweight;Very Underweight;Obese
+weightgain,2,icons/Trait_obese.png,,weightloss;Obese;Underweight;Very Underweight;Emaciated;athletic;fit
+highthirst,2,icons/Trait_highthirst.png,,lowthirst
+shortsighted,2,icons/Trait_shortsighted.png,,eagleeyed
+slowreader,2,icons/Trait_slowreader.png,,fastreader;illiterate
+weakstomach,2,icons/Trait_weakstomach.png,,irongut
+slowhealer,3,icons/Trait_slowhealer.png,,fasthealer
+smoker,3,icons/Trait_smoker.png,,athletic
+agoraphobic,4,icons/Trait_agoraphobic.png,,Desensitized;claustrophobic;adrenalinejunkie
+claustrophobic,4,icons/Trait_claustophobic.png,,brave;agoraphobic;adrenalinejunkie;Desensitized
+conspicuous,4,icons/Trait_conspicuous.png,,inconspicuous
+hardofhearing,4,icons/Trait_hardofhearing.png,,keenhearing;deaf
+heartyappetite,4,icons/Trait_heartyappetite.png,,Very Underweight;lighteater
+pronetoillness,4,icons/Trait_hypercondriac.png,,resilient
+needsmoresleep,4,icons/Trait_needsmoresleep.png,,needslesssleep
+asthmatic,5,icons/Trait_asthmatic.png,,
+hemophobic,5,icons/Trait_hemophobic.png,,Desensitized
+pacifist,5,icons/Trait_pacifist.png,,
+disorganized,6,icons/Trait_disorganized.png,,organized
+feeble,6,icons/Trait_feeble.png,str:-2,weak;stout;strong
+out of shape,6,icons/Trait_out_of_shape.png,fit:-2,athletic;fit;unfit
+insomniac,6,icons/Trait_insomniac.png,,
+slowlearner,6,icons/Trait_slowlearner.png,,crafty;fastlearner
+thinskinned,8,icons/Trait_thinskinned.png,,thickskinned
+illiterate,10,icons/Trait_illiterate.png,,slowreader;fastreader
+weak,10,icons/Trait_weak.png,str:-5,strong;stout;feeble
+unfit,10,icons/Trait_unfit.png,fit:-4,athletic;fit;out of shape
+deaf,12,icons/Trait_deaf.png,,hardofhearing;keenhearing
