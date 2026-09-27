@@ -9,10 +9,10 @@ Out of Shape,건강 이상,Out of Shape
 Unfit,비실함,Unfit
 Taut,팽팽함,Taut
 Slack,해이함,Slack
-Underweight,Underweight,Underweight
-Very Underweight,Very Underweight,Very Underweight
-Overweight,Overweight,Overweight
-Obese,Obese,Obese
+Underweight,저체중,Underweight
+Very Underweight,매우 저체중,Very Underweight
+Overweight,과체중,Overweight
+Obese,비만,Obese
 Jogger,조깅을 즐기는,Jogger
 Sneaky,비열함,Sneaky
 Lightfooted,조용한 발걸음,Lightfooted
@@ -24,7 +24,7 @@ Hiker,도보 여행자,Hiker
 WildernessKnowledge,황야 지식,WildernessKnowledge
 Forager,채집가,Forager
 Trapper,함정꾼,Trapper
-Tracker,Tracker,Tracker
+Tracker,추적자,Tracker
 MushroomPicker,버섯 채집가,Mushroom Picker
 Entomologist,곤충학자,Entomologist
 Inventive,창의적,Inventive
@@ -34,20 +34,20 @@ Cook,요리,Cook
 Handy,능숙함,Handy
 Blacksmith,대장장이 기술,Blacksmithing Basics
 Whittler,조각가,Whittler
-Culinary,Culinary,Culinary
-Woodworker,Woodworker,Woodworker
+Culinary,요리,Culinary
+Woodworker,목공,Woodworker
 ElectricTech,전기 기술자,Electrical-Technician
 AutoMechanic,자동차 정비공,Auto Mechanic
 MetalWelder,금속 용접공,Metal Welder
-Masonry,Masonry,Masonry
-Potter,Potter,Potter
-GlassBlower,GlassBlower,Glassblower
-KnappingBasics,KnappingBasics,Knapping Basics
-AnimalFriend,AnimalFriend,Animal Friend
-Slaughterer,Slaughterer,Slaughterer
+Masonry,석공술,Masonry
+Potter,도예가,Potter
+GlassBlower,유리공예가,Glassblower
+KnappingBasics,석기 제작 기초,Knapping Basics
+AnimalFriend,동물 애호가,Animal Friend
+Slaughterer,도축가,Slaughterer
 BaseballPlayer,야구선수,BaseballPlayer
 Stabber,자객,Stabber
-Smasher,Smasher,Smasher
+Smasher,분쇄자,Smasher
 Cutter,절단기,Cutter
 Spearman,창병,Spearer
 Swordsman,검객,Fencer
@@ -60,10 +60,10 @@ Brawler,싸움꾼,Brawler
 Mechanics,정비,Mechanics
 Herbalist,약초꾼,Herbalist
 GenExp,발전기 전문가,Generator Expert
-CalmMinded,CalmMinded,Calm-minded
+CalmMinded,침착함,Calm-minded
 MarathonRunner,마라톤 주자,Marathon Runner
-Tireless,Tireless,Tireless
-BreathingTech2,호흡법,Breathing Technique
+Tireless,지치지 않음,Tireless
+BreathingTech2,호흡 기술,Breathing Technique
 Asthmatic,천식환자,Asthmatic
 SpeedDemon,속도광,SpeedDemon
 SundayDriver,초보 운전,SundayDriver
@@ -76,7 +76,7 @@ Deaf,청각장애,Deaf
 Inconspicuous,부족한 존재감,Inconspicuous
 Conspicuous,넘치는 존재감,Conspicuous
 AdrenalineJunkie,아드레날린 중독,AdrenalineJunkie
-Desensitized2,Desensitized2,Desensitized2
+Desensitized2,둔감함,Desensitized2
 Brave,용감한,Brave
 Cowardly,겁쟁이,Cowardly
 Graceful,우아함,Graceful
@@ -84,8 +84,8 @@ Clumsy,덤벙댐,Clumsy
 FastReader,속독,FastReader
 SlowReader,정독,SlowReader
 Illiterate,문맹,Illiterate
-Lucky,Lucky,Lucky
-Unlucky,Unlucky,Unlucky
+Lucky,운이 좋음,Lucky
+Unlucky,운이 나쁨,Unlucky
 Agoraphobic,광장 공포증,Agoraphobic
 Claustrophobic,밀실 공포증,Claustrophobic
 Hemophobic,피 공포증,Hemophobic
@@ -127,9 +127,9 @@ NeedsMoreSleep,잠꾸러기,NeedsMoreSleep
 Insomniac,수면장애,Insomniac
 OwlPerson,올빼미,Owl
 LarkPerson,종달새,Lark
-Optimist,Optimist,Optimist
-Depressive,Depressive,Depressive
-ChronicMigraine,ChronicMigraine,Chronic Migraine
+Optimist,낙관주의자,Optimist
+Depressive,우울,Depressive
+ChronicMigraine,만성 편두통,Chronic Migraine
 Snorer,코골이,Snorer
 Allergic,알레르기,Allergic
 PanicAttacks,공황 발작,Panic Attacks

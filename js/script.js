@@ -119,16 +119,74 @@ function filterStats(dataset) {
     return customStats;
 }
 
-function normalizeLookupKey(value) {
-    return String(value ?? "").toLowerCase().replace(/[^a-z0-9]/g, "");
+// ===== 번역/정렬 보조 =====
+function normalizeKey(value = "") {
+    return String(value).toLowerCase().replace(/[^a-z0-9]/g, "");
 }
 
-function lookupTranslation(map, key) {
-    if (!map) return "";
-    if (map[key]) return map[key];
-    const target = normalizeLookupKey(key);
-    for (const [k, value] of Object.entries(map)) {
-        if (normalizeLookupKey(k) === target && value) return value;
+function isKoreanText(value = "") {
+    return /[가-힣]/.test(String(value));
+}
+
+function lookupMapValue(map, name) {
+    const direct = map[name];
+    if (direct && isKoreanText(direct)) return direct;
+    const target = normalizeKey(name);
+    for (const [k, v] of Object.entries(map)) {
+        if (normalizeKey(k) === target && isKoreanText(v)) return v;
+    }
+    return "";
+}
+
+function findSotoName(name, isJob) {
+    const sotoMap = isJob ? soto_tr_jobs.ko : soto_tr_traits.ko;
+    const vanillaMap = isJob ? tr_jobs.ko : tr_traits.ko;
+    const aliases = {
+        optimist: "optimistmood", depressive: "depressivemood",
+        owlperson: "owlperson", larkperson: "larkperson",
+        speeddemon: "speeddemon", pronetoillness: "pronetoillness",
+        thickskinned: "thickskinned", thinskinned: "thinskinned",
+        shortsighted: "shortsigh", hardofhearing: "hardhear",
+        needslesssleep: "lesssleep", needsmoresleep: "moresleep"
+    };
+    const key = normalizeKey(name);
+    const alias = aliases[key];
+
+    const direct = lookupMapValue(sotoMap, name);
+    if (direct) return direct;
+    const vanilla = lookupMapValue(vanillaMap, name);
+    if (vanilla) return vanilla;
+    if (alias) {
+        const aliasVanilla = lookupMapValue(vanillaMap, alias);
+        if (aliasVanilla) return aliasVanilla;
+        const aliasSoto = lookupMapValue(sotoMap, alias);
+        if (aliasSoto) return aliasSoto;
+    }
+    return name;
+}
+
+function findSotoDescription(name) {
+    const key = normalizeKey(name);
+    const aliases = {
+        optimist: "optimistmooddesc", depressive: "depressivemooddesc",
+        owlperson: "owlpersondesc", larkperson: "larkpersondesc",
+        speeddemon: "speeddemon", pronetoillness: "pronetoillness2desc",
+        thickskinned: "thickskinneddesc", thinskinned: "thinskinneddesc",
+        shortsighted: "shortsighdesc", hardofhearing: "hardheardesc",
+        needslesssleep: "lesssleepdesc", needsmoresleep: "moresleepdesc"
+    };
+    const alias = aliases[key];
+    const direct = lookupMapValue(soto_descriptions.ko, name);
+    if (direct) return direct;
+    if (alias) {
+        const aliased = lookupMapValue(soto_descriptions.ko, alias);
+        if (aliased) return aliased;
+    }
+    const vanilla = lookupMapValue(descriptions.ko, name);
+    if (vanilla) return vanilla;
+    if (alias) {
+        const aliased = lookupMapValue(descriptions.ko, alias);
+        if (aliased) return aliased;
     }
     return "";
 }
@@ -136,9 +194,9 @@ function lookupTranslation(map, key) {
 // ===== 옵션 생성 =====
 function createOption(row, isJob) {
     const name = row["항목"];
-    const modeNames = isJob ? soto_tr_jobs : soto_tr_traits;
-    const baseNames = isJob ? tr_jobs : tr_traits;
-    const displayName = (currentMode === "soto" ? lookupTranslation(modeNames[CURRENTLANG], name) : "") || lookupTranslation(baseNames[CURRENTLANG], name) || name;
+    const displayName = currentMode === "soto"
+        ? findSotoName(name, isJob)
+        : ((isJob ? tr_jobs[CURRENTLANG][name] : tr_traits[CURRENTLANG][name]) || name);
     const value = parseInt(row["값"]) || 0;
     const stats = parseStats(row.stats);
     const iconSrc = row.icon?.trim() || "default.png";
@@ -150,7 +208,7 @@ function createOption(row, isJob) {
     const iconSize = isJob ? "w-16 h-16" : "w-6 h-6";
     const colorClass = !isJob ? (value >= 0 ? "text-red-600" : "text-green-600") : "";
     const displayValue = value >= 0 ? `+${value}` : value;
-    const description = (currentMode === "soto" ? lookupTranslation(soto_descriptions[CURRENTLANG], name) : "") || lookupTranslation(descriptions[CURRENTLANG], name) || "";
+    const description = currentMode === "soto" ? findSotoDescription(name) : (descriptions[CURRENTLANG][name] || "");
 
     label.innerHTML = `
         <div class="flex items-center min-w-[150px]">
@@ -164,23 +222,17 @@ function createOption(row, isJob) {
     `;
 
     const input = label.querySelector("input");
-    // 툴팁 설정: SOTO 직업/특성 모두 마우스를 올리면 설명 표시
-    if (description) {
+    // 툴팁 설정
+    if (!isJob) {
         label.dataset.title = description;
         const tooltip = document.getElementById('custom-tooltip');
         label.addEventListener('mouseenter', () => {
-            tooltip.innerHTML = (label.dataset.title || '').replace(/<br\s*\/?>(?=.)/gi, '<br>');
+            tooltip.textContent = label.getAttribute('data-title');
             tooltip.style.display = 'block';
         });
         label.addEventListener('mousemove', (e) => {
-            const pad = 15;
-            const rect = tooltip.getBoundingClientRect();
-            let x = e.clientX + pad;
-            let y = e.clientY + pad;
-            if (x + rect.width > window.innerWidth - 8) x = e.clientX - rect.width - pad;
-            if (y + rect.height > window.innerHeight - 8) y = e.clientY - rect.height - pad;
-            tooltip.style.left = x + 'px';
-            tooltip.style.top = y + 'px';
+            tooltip.style.left = (e.clientX + 15) + 'px';
+            tooltip.style.top = (e.clientY + 15) + 'px';
         });
         label.addEventListener('mouseleave', () => {
             tooltip.style.display = 'none';
@@ -205,10 +257,19 @@ function createOption(row, isJob) {
 
 function setMode(mode) {
     currentMode = mode;
-    document.getElementById("mode-vanilla")?.classList.toggle("bg-gray-800", mode === "vanilla");
-    document.getElementById("mode-vanilla")?.classList.toggle("text-white", mode === "vanilla");
-    document.getElementById("mode-soto")?.classList.toggle("bg-gray-800", mode === "soto");
-    document.getElementById("mode-soto")?.classList.toggle("text-white", mode === "soto");
+    const buttons = [
+        [document.getElementById("mode-vanilla"), mode === "vanilla"],
+        [document.getElementById("mode-soto"), mode === "soto"]
+    ];
+    buttons.forEach(([button, active]) => {
+        if (!button) return;
+        // 활성 버튼은 배경/글자 색을 반전해서 현재 선택 상태를 명확하게 표시합니다.
+        button.classList.toggle("bg-gray-800", active);
+        button.classList.toggle("text-white", active);
+        button.classList.toggle("bg-white", !active);
+        button.classList.toggle("text-gray-800", !active);
+        button.setAttribute("aria-pressed", String(active));
+    });
     renderUI();
 }
 
@@ -228,14 +289,20 @@ function renderUI() {
         }
     });
 
-    traits.forEach(row => {
-        if (row["항목"]) {
-            const option = createOption(row, false);
-            if (option.value >= 0)
-                positiveDiv.appendChild(option.label);
-            else
-                negativeDiv.appendChild(option.label);
-        }
+    const validTraits = traits.filter(row => row["항목"]);
+    // 각 목록에서 1부터 시작하도록 절댓값이 작은 특성을 위에 배치합니다.
+    // 음수: -1 → -2 → -3 … / 양수: +1 → +2 → +3 …
+    validTraits.sort((a, b) => {
+        const av = parseInt(a["값"], 10) || 0;
+        const bv = parseInt(b["값"], 10) || 0;
+        const absDiff = Math.abs(av) - Math.abs(bv);
+        if (absDiff !== 0) return absDiff;
+        return String(a["항목"] || "").localeCompare(String(b["항목"] || ""));
+    });
+    validTraits.forEach(row => {
+        const option = createOption(row, false);
+        if (option.value >= 0) positiveDiv.appendChild(option.label);
+        else negativeDiv.appendChild(option.label);
     });
     
     document.getElementById("title_placeholder").innerText = tr[CURRENTLANG].title_placeholder;

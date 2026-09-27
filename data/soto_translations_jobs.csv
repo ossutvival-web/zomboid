@@ -1,53 +1,53 @@
 ﻿key,ko,en
-unemployed,백수,Unemployed
-fireofficer,소방관,fireofficer
-policeofficer,경찰관,policeofficer
-parkranger,공원 경비원,parkranger
-constructionworker,건축 인부,constructionworker
-securityguard,보안 경비원,securityguard
-carpenter,목수,carpenter
-burglar,좀도둑,burglar
-chef,주방장,chef
-repairman,DIY 전문가,repairman
-rancher,축산업자,rancher
-farmer,농부,farmer
-fisherman,어부,fisherman
-doctor,의사,doctor
-veteran,퇴역 군인,veteran
-nurse,간호사,nurse
-lumberjack,벌목꾼,lumberjack
+unemployed,백수,백수
+fireofficer,소방관,소방관
+policeofficer,경찰관,경찰관
+parkranger,공원 경비원,공원 경비원
+constructionworker,건축 인부,건축 인부
+securityguard,보안 경비원,보안 경비원
+carpenter,목수,목수
+burglar,좀도둑,좀도둑
+chef,주방장,주방장
+repairman,DIY 전문가,DIY 전문가
+rancher,축산업자,축산업자
+farmer,농부,농부
+fisherman,어부,어부
+doctor,의사,의사
+veteran,퇴역 군인,퇴역 군인
+nurse,간호사,간호사
+lumberjack,벌목꾼,벌목꾼
 fitnessInstructor,피트니스 강사,fitnessInstructor
-burgerflipper,햄버거 조리사,burgerflipper
-electrician,전기 기사,electrician
-engineer,기술자,engineer
-metalworker,용접공,metalworker
-smither,대장장이,smither
-mechanics,자동차 정비공,mechanics
-tailorProfession,재단사,Tailor
-deliverymanocc,배달부,Deliveryman
-loaderocc,상하차 인부,Loader
-truckerocc,트럭 운전사,Truck Driver
-soldierocc,군인,Soldier
-botanistocc,식물학자,Botanist
-gravemanocc,무덤 관리인,Gravedigger
-dancerocc,댄서,Dancer
-priestocc,성직자,Priest
-heavyathinstructorocc,역도 강사,Weightlifting Instructor
-detectiveocc,탐정,Detective
-teacherocc,학교 교사,School Teacher
-cleanermanocc,관리인,Janitor
-stuntmanocc,스턴트맨,Stuntman
-gasstationoperatorocc,주유소 직원,Gas Station Operator
-campcounsocc,캠프 카운슬러,Camp Counselor
-dragracerocc,드래그 레이서,Drag Racer
-junkyardworkerocc,폐차장 직원,Junkyard Worker
-lifeguardocc,인명 구조원,Lifeguard
-demoworkerocc,철거 작업자,Demolition Worker
-butcherocc,푸줏간,Butcher
-paparazziocc,파파라치,Paparazzi
-minerocc,광부,Miner
-cashierocc,상점 직원,Store Employee
-criminalocc,범죄자,Criminal
-animalcontrolofficerocc,동물 통제 책임자,Animal Control Officer
-hunterocc,사냥꾼,Huntsman
-veterinarianocc,수의사,Veterinarian
+burgerflipper,햄버거 조리사,햄버거 조리사
+electrician,전기 기사,전기 기사
+engineer,기술자,기술자
+metalworker,용접공,용접공
+smither,대장장이,대장장이
+mechanics,자동차 정비공,자동차 정비공
+tailorProfession,재단사,재단사
+deliverymanocc,배달부,배달원
+loaderocc,상하차 인부,하역 작업자
+truckerocc,트럭 운전사,트럭 운전기사
+soldierocc,군인,군인
+botanistocc,식물학자,식물학자
+gravemanocc,무덤 관리인,묘지 관리인
+dancerocc,댄서,댄서
+priestocc,성직자,성직자
+heavyathinstructorocc,역도 강사,역도 강사
+detectiveocc,탐정,탐정
+teacherocc,학교 교사,교사
+cleanermanocc,관리인,청소부
+stuntmanocc,스턴트맨,스턴트맨
+gasstationoperatorocc,주유소 직원,주유소 직원
+campcounsocc,캠프 카운슬러,캠프 상담원
+dragracerocc,드래그 레이서,드래그 레이서
+junkyardworkerocc,폐차장 직원,고물상 작업자
+lifeguardocc,인명 구조원,인명 구조원
+demoworkerocc,철거 작업자,철거 작업자
+butcherocc,푸줏간,정육점 직원
+paparazziocc,파파라치,파파라치
+minerocc,광부,광부
+cashierocc,상점 직원,매장 직원
+criminalocc,범죄자,범죄자
+animalcontrolofficerocc,동물 통제 책임자,동물 관리원
+hunterocc,사냥꾼,사냥꾼
+veterinarianocc,수의사,수의사
