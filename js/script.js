@@ -29,15 +29,50 @@ let extraStats = {};
 let selectedIcons = [];
 
 
+function parseCSV(text) {
+    const rows = [];
+    let row = [];
+    let field = "";
+    let quoted = false;
+    const source = text.replace(/^\uFEFF/, "");
+
+    for (let index = 0; index < source.length; index += 1) {
+        const character = source[index];
+        if (character === '"') {
+            if (quoted && source[index + 1] === '"') {
+                field += '"';
+                index += 1;
+            } else {
+                quoted = !quoted;
+            }
+        } else if (character === "," && !quoted) {
+            row.push(field);
+            field = "";
+        } else if ((character === "\n" || character === "\r") && !quoted) {
+            if (character === "\r" && source[index + 1] === "\n") index += 1;
+            row.push(field);
+            if (row.some(value => value !== "")) rows.push(row);
+            row = [];
+            field = "";
+        } else {
+            field += character;
+        }
+    }
+    if (field || row.length) {
+        row.push(field);
+        rows.push(row);
+    }
+
+    const headers = rows.shift() || [];
+    return rows.map(values =>
+        Object.fromEntries(headers.map((header, index) => [header, values[index] || ""]))
+    );
+}
+
 async function loadCSV(path) {
-    return new Promise((resolve, reject) => {
-        Papa.parse(path, {
-            download: true,
-            header: true,
-            complete: resolve,
-            error: reject
-        });
-    });
+    const response = await fetch(path);
+    if (!response.ok) throw new Error(`${path} 파일을 불러오지 못했습니다 (${response.status})`);
+    return { data: parseCSV(await response.text()) };
 }
 
 async function loadData() {
@@ -152,10 +187,12 @@ function findSotoName(name, isJob) {
     const key = normalizeKey(name);
     const alias = aliases[key];
 
-    const direct = lookupMapValue(sotoMap, name);
-    if (direct) return direct;
+    // Shared Vanilla/SOTO entries always use the established Vanilla Korean
+    // name. SOTO's UI_KO mapping supplies names that only exist in the mod.
     const vanilla = lookupMapValue(vanillaMap, name);
     if (vanilla) return vanilla;
+    const direct = lookupMapValue(sotoMap, name);
+    if (direct) return direct;
     if (alias) {
         const aliasVanilla = lookupMapValue(vanillaMap, alias);
         if (aliasVanilla) return aliasVanilla;
@@ -191,6 +228,32 @@ function findSotoDescription(name) {
     return "";
 }
 
+function setTooltipContent(tooltip, description) {
+    tooltip.replaceChildren();
+    String(description || "").split(/<br\s*\/?>/i).forEach((line, index) => {
+        if (index) tooltip.appendChild(document.createElement("br"));
+        tooltip.appendChild(document.createTextNode(line));
+    });
+}
+
+function positionTooltip(tooltip, event) {
+    const gap = 14;
+    const viewportGap = 8;
+    const rect = tooltip.getBoundingClientRect();
+    let left = event.clientX + gap;
+    let top = event.clientY + gap;
+
+    if (left + rect.width + viewportGap > window.innerWidth) {
+        left = event.clientX - rect.width - gap;
+    }
+    if (top + rect.height + viewportGap > window.innerHeight) {
+        top = event.clientY - rect.height - gap;
+    }
+
+    tooltip.style.left = `${Math.max(viewportGap, left)}px`;
+    tooltip.style.top = `${Math.max(viewportGap, top)}px`;
+}
+
 // ===== 옵션 생성 =====
 function createOption(row, isJob) {
     const name = row["항목"];
@@ -222,17 +285,16 @@ function createOption(row, isJob) {
     `;
 
     const input = label.querySelector("input");
-    // 툴팁 설정
-    if (!isJob) {
+    // 직업과 특성 모두 설명이 있을 때 동일한 툴팁을 사용합니다.
+    if (description) {
         label.dataset.title = description;
         const tooltip = document.getElementById('custom-tooltip');
         label.addEventListener('mouseenter', () => {
-            tooltip.textContent = label.getAttribute('data-title');
+            setTooltipContent(tooltip, label.dataset.title);
             tooltip.style.display = 'block';
         });
         label.addEventListener('mousemove', (e) => {
-            tooltip.style.left = (e.clientX + 15) + 'px';
-            tooltip.style.top = (e.clientY + 15) + 'px';
+            positionTooltip(tooltip, e);
         });
         label.addEventListener('mouseleave', () => {
             tooltip.style.display = 'none';
@@ -255,26 +317,30 @@ function createOption(row, isJob) {
     return { label, value };
 }
 
-function setMode(mode) {
-    currentMode = mode;
+function syncModeButtons() {
     const buttons = [
-        [document.getElementById("mode-vanilla"), mode === "vanilla"],
-        [document.getElementById("mode-soto"), mode === "soto"]
+        [document.getElementById("mode-vanilla"), currentMode === "vanilla"],
+        [document.getElementById("mode-soto"), currentMode === "soto"]
     ];
     buttons.forEach(([button, active]) => {
         if (!button) return;
-        // 활성 버튼은 배경/글자 색을 반전해서 현재 선택 상태를 명확하게 표시합니다.
         button.classList.toggle("bg-gray-800", active);
         button.classList.toggle("text-white", active);
         button.classList.toggle("bg-white", !active);
         button.classList.toggle("text-gray-800", !active);
+        button.classList.toggle("active", active);
         button.setAttribute("aria-pressed", String(active));
     });
+}
+
+function setMode(mode) {
+    currentMode = mode;
     renderUI();
 }
 
 // ===== UI 렌더링 =====
 function renderUI() {
+    syncModeButtons();
     jobsDiv.innerHTML = "";
     positiveDiv.innerHTML = "";
     negativeDiv.innerHTML = "";
@@ -362,7 +428,7 @@ function updateSum() {
         const banned = input.dataset.banned;
         if (banned) {
             banned.split(";").forEach(trait =>
-                bannedTraits.add(trait.trim())
+                bannedTraits.add(normalizeKey(trait))
             );
         }
 
@@ -429,7 +495,7 @@ function updateSum() {
 // ===== 버튼 disable =====
 function disableButtons(bannedTraits) {
     document.querySelectorAll('input[type="checkbox"]').forEach(input => {
-        const id = input.dataset.id;
+        const id = normalizeKey(input.dataset.id);
 
         if (bannedTraits.has(id)) {
             input.disabled = true;
@@ -470,6 +536,9 @@ document.getElementById("rst-btn").addEventListener("click", () => {
 });
 
 // ===== 초기화 =====
+currentMode = new URLSearchParams(window.location.search).get("mode") === "soto"
+    ? "soto"
+    : "vanilla";
 loadData();
 
 // ==========

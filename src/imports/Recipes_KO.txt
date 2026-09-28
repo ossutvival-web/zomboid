@@ -1,0 +1,7 @@
+Recipes_KO = {
+
+	Recipe_Write_A_Prayer = "기도문 쓰기",
+	Recipe_Make_Cleaning_Liquid  = "주방세제 만들기",	
+	Recipe_Make_Bleach = "표백제 만들기",	
+	
+}

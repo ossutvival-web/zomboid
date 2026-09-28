@@ -1,0 +1,7 @@
+Tooltip_KO = {
+
+	Tooltip_SOTO_StrongGripSledgehammer = "단단한 파지법 효과.",
+	Tooltip_SOTO_MyBelovedWoodAxe = "내 사랑 효과.", 
+	Tooltip_SOTO_MinersEndurancePickAxe = "광부의 인내 효과.",  
+	
+}

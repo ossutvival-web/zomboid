@@ -1,4 +1,4 @@
-﻿항목,값,icon,stats,금지항목
+항목,값,icon,stats,금지항목
 Stout,-6,icons/Trait_stout.png,str:2,Strong;Feeble;Weak;Very Underweight
 Strong,-12,icons/Trait_strong.png,str:4,Stout;Feeble;Weak;Very Underweight;Slack;WeakBack
 Feeble,6,icons/Trait_feeble.png,str:-2,Strong;Stout;Weak

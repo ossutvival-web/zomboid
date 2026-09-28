@@ -1,0 +1,61 @@
+Sandbox_KO = {
+
+	Sandbox_SOTO = "심플 오버홀 : 특성과 직업",
+
+	Sandbox_SOTO_AgilityTraitsObtainable = "민첩성 관련 기술 특성을 얻을 수 있습니다.",
+	Sandbox_SOTO_AgilityTraitsObtainable_tooltip = "민첩성 스킬을 레벨링하는 동안 경험치 부스트를 얻을 수 있습니다.<br>예를 들어 플레이어는 은밀한 특성을 획득하여 은신 스킬에 대한 경험치 획득을 증가시킬 수 있습니다.",
+	
+	Sandbox_SOTO_CombatTraitsObtainable = "전투 관련 스킬 특성은 다음과 같이 획득할 수 있습니다.",
+	Sandbox_SOTO_CombatTraitsObtainable_tooltip = "전투 기술을 레벨링하는 동안 경험치 부스트를 얻을 수 있습니다.<br>예를 들어 플레이어는 야구 선수 특성을 획득하여 긴 둔기 기술에 대한 경험치 획득을 증가시킬 수 있습니다.",
+	
+	Sandbox_SOTO_SurvTraitsObtainable = "생존주의자 관련 스킬 특성은 다음과 같이 획득할 수 있습니다.",
+	Sandbox_SOTO_SurvTraitsObtainable_tooltip = "생존 기술을 레벨업하는 동안 경험치 부스트를 얻을 수 있습니다.<br>예를 들어 플레이어는 채집 기술에 대한 경험치 획득을 증가시키기 위해 채집자 특성을 얻을 수 있습니다.",
+	
+	Sandbox_SOTO_CraftTraitsObtainable = "제작 관련 기술 특성을 얻을 수 있습니다.",
+	Sandbox_SOTO_CraftTraitsObtainable_tooltip = "제작 기술을 레벨링하는 동안 경험치 부스트를 얻을 수 있습니다.<br>예를 들어 플레이어는 비천한 사람 특성을 획득하여 요리 기술에 대한 경험치 획득을 증가시킬 수 있습니다.",
+	
+	Sandbox_SOTO_FirearmTraitsObtainable = "총기 관련 스킬 특성은 다음과 같이 획득할 수 있습니다.",
+	Sandbox_SOTO_FirearmTraitsObtainable_tooltip = "총기 스킬을 레벨링하는 동안 경험치 부스트를 얻을 수 있습니다.<br>예를 들어 플레이어는 조준 스킬에 대한 경험치 획득을 증가시키기 위해 사수 특성을 얻을 수 있습니다.",
+	
+	Sandbox_SOTO_AddFitXPWhileRun = "달리는 동안 추가 피트니스 경험:",
+	Sandbox_SOTO_AddFitXPWhileRun_tooltip = "플레이어는 달리는 동안 50%의 확률로 게임 분당 한 번 피트니스 경험치 1개를 획득할 수 있습니다.",	
+
+	Sandbox_SOTO_LoseCowardlyHoursMIN = "겁쟁이 특성을 제거하는데 걸리는 최소 시간:",
+	Sandbox_SOTO_LoseCowardlyHoursMIN_tooltip = "최대치 보다 작아야함. <br>(1일 = 24시간)",
+	Sandbox_SOTO_LoseCowardlyHoursMAX = "겁쟁이 특성을 제거하는데 걸리는 최대 시간:",
+	Sandbox_SOTO_LoseCowardlyHoursMAX_tooltip = "최소치 보다 크게 설정. <br>(1일 = 24시간)",	
+	Sandbox_SOTO_LoseCowardlyZombMIN = "겁쟁이 특성을 제거하는데 걸리는 최소 킬 수:",
+	Sandbox_SOTO_LoseCowardlyZombMIN_tooltip = "최대치 보다 작아야함.",
+	Sandbox_SOTO_LoseCowardlyZombMAX = "겁쟁이 특성을 제거하는데 걸리는 최대 킬 수:",
+	Sandbox_SOTO_LoseCowardlyZombMAX_tooltip = "최소치 보다 크게 설정.",	
+
+	Sandbox_SOTO_EarnBraveHoursMIN = "용감함 특성을 얻는데 걸리는 최소 시간:",
+	Sandbox_SOTO_EarnBraveHoursMIN_tooltip = "최대치 보다 작아야함.<br>(1일 = 24시간)<br>겁쟁이 특성을 가졌다면 x1.2배 더 필요합니다.",
+	Sandbox_SOTO_EarnBraveHoursMAX = "용감함 특성을 얻는데 걸리는 최대 시간:",
+	Sandbox_SOTO_EarnBraveHoursMAX_tooltip = "최소치 보다 크게 설정.<br>(1일 = 24시간)<br>겁쟁이 특성을 가졌다면 x1.2배 더 필요합니다.",
+	Sandbox_SOTO_EarnBraveZombMIN = "용감함 특성을 얻는데 걸리는 최소 킬 수:",
+	Sandbox_SOTO_EarnBraveZombMIN_tooltip = "최대치 보다 작아야함.<br>겁쟁이 특성을 가졌다면 x1.2배 더 필요합니다.",
+	Sandbox_SOTO_EarnBraveZombMAX = "용감함 특성을 얻는데 걸리는 최대 킬 수:",
+	Sandbox_SOTO_EarnBraveZombMAX_tooltip = "최소치 보다 크게 설정.<br>겁쟁이 특성을 가졌다면 x1.2배 더 필요합니다.",	
+
+	Sandbox_SOTO_EarnDesensitizedHoursMIN = "둔감함 특성을 얻는데 걸리는 최소 시간:",
+	Sandbox_SOTO_EarnDesensitizedHoursMIN_tooltip = "최대치 보다 작아야함. <br>(하루는 24시간입니다)<br>겁쟁이 특성을 가졌다면 x1.2배 더 필요합니다.<br>용감한 특성을 처음부터 가졌다면 0.8배 덜 필요합니다.",
+	Sandbox_SOTO_EarnDesensitizedHoursMAX = "둔감함 특성을 얻는데 걸리는 최대 시간:",
+	Sandbox_SOTO_EarnDesensitizedHoursMAX_tooltip = "최소치 보다 크게 설정. <br>(하루는 24시간입니다)<br>겁쟁이 특성을 가졌다면 x1.2배 더 필요합니다.<br>용감한 특성을 처음부터 가졌다면 0.8배 덜 필요합니다.",
+	Sandbox_SOTO_EarnDesensitizedZombMIN = "둔감함 특성을 얻는데 걸리는 최소 킬 수:",
+	Sandbox_SOTO_EarnDesensitizedZombMIN_tooltip = "최대치 보다 작아야함.<br>겁쟁이 특성을 가졌다면 x1.2배 더 필요합니다.<br>용감한 특성을 처음부터 가졌다면 0.8배 덜 필요합니다.",
+	Sandbox_SOTO_EarnDesensitizedZombMAX = "둔감함 특성을 얻는데 걸리는 최대 킬 수:",
+	Sandbox_SOTO_EarnDesensitizedZombMAX_tooltip = "최소치 보다 크게 설정.<br>겁쟁이 특성을 가졌다면 x1.2배 더 필요합니다.<br>용감한 특성을 처음부터 가졌다면 0.8배 덜 필요합니다.",		
+
+	Sandbox_SOTO_LosePacifistHoursMIN = "평화주의자 특성을 제거 하는데 필요한 최소 생존 시간:",
+	Sandbox_SOTO_LosePacifistHoursMIN_tooltip = "최대치 보다 높게 설정 필요. <br>(1일 = 24시간)",
+	Sandbox_SOTO_LosePacifistHoursMAX = "평화주의자 특성을 제거 하는데 필요한 최대 생존 시간:",
+	Sandbox_SOTO_LosePacifistHoursMAX_tooltip = "최소치 보다 높게 설정 필요. <br>(1일 = 24시간)",	
+	Sandbox_SOTO_LosePacifistZombMIN = "평화주의자 특성을 제거 하는데 걸리는 최소 킬 수:",
+	Sandbox_SOTO_LosePacifistZombMIN_tooltip = "최대치 보다 높게 설정 필요.",
+	Sandbox_SOTO_LosePacifistZombMAX = "평화주의자 특성을 제거 하는대 걸리는 최대 킬 수:",
+	Sandbox_SOTO_LosePacifistZombMAX_tooltip = "최소치 보다 높게 설정 필요.",
+	Sandbox_SOTO_LosePacifistSkillLvl = "평화주의자 특성을 제거 하는데 필요한 최소 무기 기술 레벨:",
+	Sandbox_SOTO_LosePacifistSkillLvl_tooltip = "물건관리 및 재장전을 제외한 모든 무기 기술.",
+
+}

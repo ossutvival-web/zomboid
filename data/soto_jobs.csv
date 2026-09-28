@@ -1,4 +1,4 @@
-﻿항목,값,icon,stats,금지항목
+항목,값,icon,stats,금지항목
 unemployed,10,icons/Profession_nojob.png,,
 fireofficer,-4,icons/Profession_fireofficer2.png,str:1;fit:1;Axe:1;Running:1,
 policeofficer,-5,icons/Profession_policeofficer2.png,Aiming:2;Reloading:2;SmallBlunt:1;Nimble:1,

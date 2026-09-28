@@ -1,0 +1,10 @@
+{
+  "description": "Explore character traits and occupations in Project Zomboid with enhanced features for the Simple Overhaul mode, providing detailed translations and tooltips.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
