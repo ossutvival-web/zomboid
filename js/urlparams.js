@@ -14,9 +14,7 @@ function serializeStateToUrl() {
         var job = getSelectedJobId();
         var traits = getSelectedTraitIds();
 
-        if (typeof currentMode !== "undefined" && currentMode === "soto") {
-            params.set("mode", "soto");
-        }
+        if (typeof currentMode !== 'undefined' && currentMode === 'soto') params.set('mode', 'soto');
         if (job) params.set('job', job);
         if (traits.length) params.set('traits', traits.join(','));
 
@@ -27,26 +25,29 @@ function serializeStateToUrl() {
     }
 }
 
+// vanilla(speeddemon) / SOTO(SpeedDemon) 처럼 대소문자·표기가 다른 id 도 같은 항목으로 복원
+function urlKey(v) {
+    return String(v || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+}
+
 function loadStateFromUrl() {
     try {
         var params = new URLSearchParams(window.location.search);
         var job = params.get('job');
         var traits = params.get('traits') ? params.get('traits').split(',') : [];
-        var normalizedJob = typeof normalizeKey === "function" ? normalizeKey(job) : job;
-        var normalizedTraits = traits.map(function (trait) {
-            return typeof normalizeKey === "function" ? normalizeKey(trait) : trait;
-        });
         if (job || traits.length) {
-            const jobInput = Array.from(document.querySelectorAll('input[type="radio"][data-id]'))
-                .find(function (input) {
-                    var id = typeof normalizeKey === "function" ? normalizeKey(input.dataset.id) : input.dataset.id;
-                    return id === normalizedJob;
-                });
-            if (jobInput) jobInput.checked = true;
-            
+            const jobKey = urlKey(job);
+            if (job) {
+                const jobInput = Array.from(document.querySelectorAll('input[type="radio"]'))
+                    .find(i => i.dataset.id === job) ||
+                    Array.from(document.querySelectorAll('input[type="radio"]'))
+                    .find(i => urlKey(i.dataset.id) === jobKey);
+                if (jobInput) jobInput.checked = true;
+            }
+
+            const traitKeys = new Set(traits.map(urlKey));
             document.querySelectorAll('input[type="checkbox"]').forEach(input => {
-                var id = typeof normalizeKey === "function" ? normalizeKey(input.dataset.id) : input.dataset.id;
-                if (normalizedTraits.includes(id)) {
+                if (traits.includes(input.dataset.id) || traitKeys.has(urlKey(input.dataset.id))) {
                     input.checked = true;
                 }
             });

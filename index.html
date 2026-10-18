@@ -33,10 +33,28 @@
       border-radius: 4px;
       font-size: 12px;
       line-height: 1.5;
-      max-width: min(420px, calc(100vw - 16px));
       white-space: normal;
+      word-break: keep-all;
       overflow-wrap: anywhere;
-      box-shadow: 0 4px 14px rgb(0 0 0 / 25%);
+      max-width: min(340px, calc(100vw - 24px));
+      box-shadow: 0 2px 8px rgba(0, 0, 0, .3);
+    }
+
+    #custom-tooltip .tt-title {
+      font-weight: 700;
+      font-size: 13px;
+      margin-bottom: 2px;
+    }
+
+    /* 모드 버튼: 활성 시 배경색 ↔ 글자색 반전 (Tailwind 클래스와 함께 쓰는 안전장치) */
+    #mode-vanilla, #mode-soto {
+      background-color: #fff;
+      color: #1f2937;
+    }
+
+    #mode-vanilla.active, #mode-soto.active {
+      background-color: #1f2937;
+      color: #fff;
     }
   </style>
 </head>
@@ -94,7 +112,7 @@
       </div>
 
       <div class="flex justify-center gap-2 mt-3 mb-1">
-        <button id="mode-vanilla" type="button" aria-pressed="true" class="px-4 py-2 rounded-lg border bg-gray-800 text-white transition-colors">바닐라</button>
+        <button id="mode-vanilla" type="button" aria-pressed="true" class="active px-4 py-2 rounded-lg border bg-gray-800 text-white transition-colors">바닐라</button>
         <button id="mode-soto" type="button" aria-pressed="false" class="px-4 py-2 rounded-lg border bg-white text-gray-800 transition-colors">SOTO</button>
       </div>
 

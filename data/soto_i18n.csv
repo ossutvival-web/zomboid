@@ -1,0 +1,188 @@
+type,key,name_ko,name_src,desc_ko,desc_src
+trait,Stout,통통함,vanilla,근력 +2,vanilla
+trait,Strong,튼튼함,vanilla,근력 +4; 밀치기 향상,vanilla
+trait,Feeble,연약함,vanilla,근력 -2,vanilla
+trait,Weak,약함,vanilla,근력 -5; 밀치기 감소,vanilla
+trait,Fit,건강한,vanilla,체력 +2,vanilla
+trait,Athletic,육상 선수,vanilla,체력 +4; 달리기 향상,vanilla
+trait,Out of Shape,건강 이상,vanilla,체력 -2,vanilla
+trait,Unfit,비실함,vanilla,체력 -4,vanilla
+trait,Taut,팽팽함,UI_KO,,
+trait,Slack,해이함,UI_KO,,
+trait,Underweight,저체중,csv,,
+trait,Very Underweight,매우 저체중,csv,,
+trait,Overweight,과체중,csv,,
+trait,Obese,비만,csv,,
+trait,Jogger,조깅을 즐기는,vanilla,능숙한 달리기 +1,vanilla
+trait,Sneaky,비열함,UI_KO,,
+trait,Lightfooted,조용한 발걸음,UI_KO,,
+trait,Nimble,재빠름,UI_KO,,
+trait,Gymnast,체조선수,vanilla,재빠름과 조용한 발걸음 기술을 가지고 있습니다.,UI_KO
+trait,Fishing,낚시꾼,vanilla,낚시 +1; 채집 향상,vanilla
+trait,Gardener,정원사,vanilla,농사에 재능이 있습니다.,UI_KO
+trait,Hiker,도보 여행자,vanilla,"장거리 등반 경험자.<br>(잠시 쉬지 않고 가다 보면 배고픔, 갈증, 피로 감소폭이 줄어듭니다.<br>올가미 덫, 막대 덫, 나무 상자 덫 만드는 법을 알고 있습니다.)",UI_KO
+trait,WildernessKnowledge,황야 지식,vanilla,조각술 +1; 채집 +1; 물건관리 +1; 석기제작 +1; 채집 향상,vanilla
+trait,Forager,채집가,UI_KO,,
+trait,Trapper,함정꾼,UI_KO,(함정의 제작법을 알고 있습니다.),UI_KO
+trait,Tracker,추적자,csv,,
+trait,MushroomPicker,버섯 채집가,UI_KO,검색 모드에서 버섯을 찾을 확률이 증가합니다.,UI_KO
+trait,Entomologist,곤충학자,UI_KO,검색 모드에서 곤충을 찾을 확률이 증가합니다.,UI_KO
+trait,Inventive,창의적,vanilla,레시피 습득 필요 레벨 -1,vanilla
+trait,FirstAid,응급처치,vanilla,응급처치 능력이 있습니다.,UI_KO
+trait,Tailor,재단술,vanilla,재단술 +1,vanilla
+trait,Cook,요리,vanilla,요리 +2; 도축 +1; 채집 향상,vanilla
+trait,Handy,능숙함,vanilla,목공술 +1; 조각술 +1; 물건관리 +1; 석공술 +1; 모든 구조물 체력 +100; 건설 속도 향상,vanilla
+trait,Blacksmith,대장장이 기술,vanilla,물건관리 +1; 금속세공 +2,vanilla
+trait,Whittler,조각가,vanilla,조각술 +2; 채집 향상,vanilla
+trait,Culinary,요리,csv,,
+trait,Woodworker,목공,csv,,
+trait,ElectricTech,전기 기술자,UI_KO,,
+trait,AutoMechanic,자동차 정비공,UI_KO,,
+trait,MetalWelder,금속 용접공,UI_KO,,
+trait,Masonry,석공술,csv,,
+trait,Potter,도예가,csv,,
+trait,GlassBlower,유리공예가,csv,,
+trait,KnappingBasics,석기 제작 기초,csv,,
+trait,AnimalFriend,동물 애호가,csv,,
+trait,Slaughterer,도축가,csv,,
+trait,BaseballPlayer,야구선수,vanilla,긴 둔기 +1,vanilla
+trait,Stabber,자객,UI_KO,,
+trait,Smasher,분쇄자,csv,,
+trait,Cutter,절단기,UI_KO,,
+trait,Spearman,창병,UI_KO,,
+trait,Swordsman,검객,UI_KO,,
+trait,Durab,내구성,UI_KO,,
+trait,Shooter,사수,UI_KO,총기를 다룰 줄 알고 있습니다.<br>(조준 및 재장전 스킬 보유),csv
+trait,ExpShooter,명사수,UI_KO,,
+trait,Hunter,사냥꾼,vanilla,조준 +1; 도축 +1; 단검 +1; 채집 +1; 은밀한 움직임 +1; 채집 향상,vanilla
+trait,Formerscout,정찰병 경험,vanilla,의료 +1; 낚시 +1; 채집 +1; 채집 향상,vanilla
+trait,Brawler,싸움꾼,vanilla,도끼 +1; 긴 둔기 +1,vanilla
+trait,Mechanics,정비,vanilla,표준 및 대형 차량을 관리하고 수리하는 방법을 알고 있습니다.,UI_KO
+trait,Herbalist,약초꾼,vanilla,채집 +1; 채집 향상,vanilla
+trait,GenExp,발전기 전문가,UI_KO,발전기 사용 및 수리법을 알고 있습니다.<br>(발전기를 수리할 때 추가적으로 5%의 내구도를 회복시킵니다.),UI_KO
+trait,CalmMinded,침착함,csv,,
+trait,MarathonRunner,마라톤 주자,UI_KO,달리거나 질주할 때 지구력 회복량이 증가합니다.<br>(숙여서 달리는 경우에 영향을 주지 않습니다.<br>달리면 지구력 회복량이 증가합니다.),UI_KO
+trait,Tireless,지치지 않음,csv,,
+trait,BreathingTech2,호흡 기술,csv,움직이지 않을 때 지구력 회복량이 증가합니다.<br>(바닥에 앉아 있을 때 2배의 효과가 있습니다.),UI_KO
+trait,Asthmatic,천식환자,vanilla,달리기 지구력 효율 -40%; 무기 및 도구 지구력 효율 -30%,vanilla
+trait,SpeedDemon,속도광,vanilla,차량의 최고 속력 +15%; 기어 전환 속도 +100%,vanilla
+trait,SundayDriver,초보 운전,vanilla,차량의 최고 속력 30km/h; 가속 -40%,vanilla
+trait,ShortSighted,짧은 시야,vanilla,4타일 이상 거리를 블러 처리; 채집 거리 감소 (안경 착용 시 제거됨),vanilla
+trait,EagleEyed,매의 눈,vanilla,가시거리 향상; 채집 향상,vanilla
+trait,NightVision,고양이의 눈,vanilla,야간시야 +20%; 채집 향상,vanilla
+trait,KeenHearing,예민한 청력,vanilla,인지거리 +100%; 뒤에서 접근하는 좀비가 더 빨리 발견됨,vanilla
+trait,HardOfHearing,어두운 귀,vanilla,인지거리 감소; 모든 소리가 먹먹해짐,vanilla
+trait,Deaf,청각장애,vanilla,소리를 들을 수 없음,vanilla
+trait,Inconspicuous,부족한 존재감,vanilla,좀비에게 발견될 확률 -50%,vanilla
+trait,Conspicuous,넘치는 존재감,vanilla,좀비에게 발견될 확률 +100%,vanilla
+trait,AdrenalineJunkie,아드레날린 중독,vanilla,패닉 상태에서 이동속도 증가,vanilla
+trait,Desensitized2,둔감함,csv,,
+trait,Brave,용감한,vanilla,패닉 속도 -70%,vanilla
+trait,Cowardly,겁쟁이,vanilla,패닉 속도 +100%,vanilla
+trait,Graceful,우아함,vanilla,발소리 범위 및 크기 -40%,vanilla
+trait,Clumsy,덤벙댐,vanilla,발소리 범위 및 크기 +20%,vanilla
+trait,FastReader,속독,vanilla,책 읽는 속도 +30%,vanilla
+trait,SlowReader,정독,vanilla,책 읽는 속도 -30%,vanilla
+trait,Illiterate,문맹,vanilla,글을 읽을 수 없음,vanilla
+trait,Lucky,운이 좋음,csv,,
+trait,Unlucky,운이 나쁨,csv,,
+trait,Agoraphobic,광장 공포증,vanilla,실외에 머무를 때 패닉 증가; 채집 거리 감소,vanilla
+trait,Claustrophobic,밀실 공포증,vanilla,실내에 머무를 때 패닉 증가,vanilla
+trait,Hemophobic,피 공포증,vanilla,동물을 도축하거나 자기자신을 응급처치할 때 긴장이 증가합니다.<br>타인을 치료할 수 없습니다.<br>피가 뭍었을 때 스트레스와 불행이 증가합니다.,UI_KO
+trait,FearoftheDark,어둠 공포증,UI_KO,어둠에 대한 두려워합니다. 광원이 없으면 패닉에 빠집니다.<br>오랫동안 어둠 속에 있으면 스트레스가 증가합니다.,UI_KO
+trait,Nutritionist,영양사,vanilla,식품의 영양정보 표시; 채집 향상,vanilla
+trait,Outdoorsman,등산애호가,vanilla,감기 걸릴 확률 감소; 나무에 긁힐 확률 감소; 채집 향상,vanilla
+trait,FastLearner,현자,vanilla,운동을 제외한 모든 경험치 +30%,vanilla
+trait,SlowLearner,느린 학습,vanilla,운동을 제외한 모든 경험치 -30%,vanilla
+trait,Cruelty,잔혹함,UI_KO,"무기에 더 효과적으로 사용합니다.<br>(모든 무기, 물건 관리 및 조준 기술에 대해 +25% XP.)",UI_KO
+trait,Pacifist,평화주의자,vanilla,전투 경험치 -25%,vanilla
+trait,Crafty,재주꾼,vanilla,모든 제작 스킬 경험치 +30%,vanilla
+trait,IronGut,강철 위장,vanilla,식중독 확률 감소 및 회복 속도 증가,vanilla
+trait,WeakStomach,소화불량,vanilla,식중독 확률 증가 및 회복 속도 감소,vanilla
+trait,SensitiveDigestion,민감한 소화,UI_KO,과식 시 속이 메스껍고 메스꺼움을 느끼게 됩니다.<br>(많이 먹을수록 통증과 메스꺼움이 강해질 수 있음.),UI_KO
+trait,Smoker,골초,vanilla,"담배 중독이 있습니다.<br>달리거나 싸울 때 약간 더 빨리 지치고, 피곤할 때 기침할 수 있습니다.<br>흡연은 스트레스, 불행 및 배고픔을 감소시킵니다.<br>금연은 스트레스, 불행 및 배고픔을 증가시킵니다.<br>(한 달 동안 담배를 피우지 않으면 나쁜 습관을 없앨 수 있습니다.)",UI_KO
+trait,SOAlcoholic,알코올 중독자,UI_KO,"알콜 중독을 가지고 있습니다.<br>술을 마셔도 피로가 증가하지 않습니다.<br>금주는 스트레스, 불행, 갈증을 증가시킵니다.<br>장기간의 금주는 피로, 두통, 메스꺼움을 증가시킵니다.<br>(한 달 반 동안 술을 마시지 않으면 이 특성을 없앨 수 있다.)",UI_KO
+trait,LessSweaty,적은 발한,UI_KO,땀 발생이 감소합니다.<br>(우천 시에는 효과가 떨어질 수 있습니다.),UI_KO
+trait,HighSweaty,과한 발한,UI_KO,"땀 발생이 증가합니다.<br>(전투, 달리기 또는 운동 중에 땀을 많이 흘립니다.)",UI_KO
+trait,Organized,정리쟁이,vanilla,모든 보관함 용량 +30%,vanilla
+trait,Disorganized,비체계적인,vanilla,모든 보관함 용량 -30%,vanilla
+trait,StrongBack,강한 허리,UI_KO,운반 무게 증가.<br>(근력 레벨에 따라 1-2 무게 추가.),UI_KO
+trait,WeakBack,약한 허리,UI_KO,운반 무게 감소.<br>(근력 레벨에 따라 운반 무게가 1-3 감소합니다.),UI_KO
+trait,Dextrous,민첩한,vanilla,인벤토리 항목을 빠르게 옮깁니다.<br>(-50% 인벤토리 이동 시간.),UI_KO
+trait,AllThumbs,서투른,vanilla,인벤토리 아이템을 천천히 옮깁니다.<br>(+100% 인벤토리 이동 시간.),UI_KO
+trait,LiquidBlood,묽은 피,UI_KO,상처에 더 많이 피를 흘립니다.<br>(+100% 출혈 효과).,UI_KO
+trait,ThickBlood,진한 피,UI_KO,상처에 덜 피를 흘립니다.<br>(-50% 출혈 효과).,UI_KO
+trait,LowThirst,낮은 갈증,vanilla,목마름 속도 -50%,vanilla
+trait,HighThirst,높은 갈증,vanilla,목마름 속도 +100%,vanilla
+trait,LightEater,소식가,vanilla,배고픔 속도 -25%,vanilla
+trait,HeartyAppetite,대식가,vanilla,배고픔 속도 +50%; 채집 향상,vanilla
+trait,FastHealer,빠른 회복,vanilla,부상을 입었을 때 심각도 -40%,vanilla
+trait,SlowHealer,느린 치유,vanilla,부상을 입었을 때 심각도 증가,vanilla
+trait,Resilient,강한 회복력,vanilla,감기에 걸릴 확률이 감소하고 좀비화가 느리게 진행됨,vanilla
+trait,ProneToIllness,질병에 취약함,vanilla,"병에 걸리기 쉽습니다. 우연히 감기에 걸릴 수도 있습니다.<br>좀비화 증상이 빠르게 증가합니다.<br>(좀비화 속도 +25%, 감기 걸릴 확률 +70%,<br>감기 강도 +20%, 감기 진행도 +50%,<br>야외 활동 중 감기에 걸릴 확률이 적게 존재합니다.)",UI_KO
+trait,ThickSkinned,두꺼운 피부,vanilla,부상 확률 -30%,vanilla
+trait,ThinSkinned,얇은 피부,vanilla,부상을 당할 확률 증가,vanilla
+trait,NeedsLessSleep,잠이 없는,vanilla,피곤함 속도 -30%; 수면 효율 +10%,vanilla
+trait,NeedsMoreSleep,잠꾸러기,vanilla,피곤함 속도 +30%; 수면 효율 -10%,vanilla
+trait,Insomniac,수면장애,vanilla,최대 수면 시간이 제한됨; 수면으로 회복하는 피로도 감소,vanilla
+trait,OwlPerson,올빼미,UI_KO,"저녁에 깨어 있는 것을 선호합니다.<br>(졸음은 늦은 저녁(17:00-22:00))에 더 천천히 축적되지만,<br>이른 아침(05:00-10:00)에 더 빠릅니다.).",UI_KO
+trait,LarkPerson,종달새,UI_KO,아침에 기상하는 것을 선호합니다.<br>(졸음은 이른 아침(05:00-10:00))에 더 천천히 축적되지만 늦은 저녁(17:00-22:00)에 더 빠르게 축적됩니다.).,UI_KO
+trait,Optimist,낙관주의자,UI_KO,지루함을 덜 느낍니다. 오랫동안 우울해지지 않습니다.<br>(지루함 생성을 50% 감소시킵니다.<br>48시간 동안 불행은 50%를 넘지 않습니다.),UI_KO
+trait,Depressive,우울,UI_KO,"종종 슬퍼집니다. 아무 이유없이 우울해집니다.<br>기분이 좋지 않으면 생산성에 영향을 미칩니다.<br>(불행은 시간이 지나면서 점점 쌓입니다.<br>갑작스러운 우울증은 며칠에 한 번씩 발생할 수 있습니다.<br>불행 무들이 -10% 보다 작으면, 그에따라 모든 경험치 습득량이 감소합니다.)",UI_KO
+trait,ChronicMigraine,만성 편두통,csv,,
+trait,Snorer,코골이,UI_KO,자는 동안 큰 소리로 코골이를 합니다..<br>(자고 있는 동안 좀비를 유인할 수 있습니다.),UI_KO
+trait,Allergic,알레르기,UI_KO,때때로 재채기를 의지와 상관없이 합니다. <br>(좀비를 유인할 수 있습니다.<br>휴지나 화장지로 재채기 소리를 줄일 수있습니다.),UI_KO
+trait,PanicAttacks,공황 발작,UI_KO,갑작스러운 공황 발작으로 고통받습니다.<br>공황은 더 천천히 지나갑니다.<br>(공황 발작에서 깨어날 수 있습니다.<br>공황 발작은 생존한 시간과 함께 줄어듭니다.),UI_KO
+trait,SoreLegs,쓰린 다리,UI_KO,"걷기, 달리기, 전력질주, 운동, 밟기 시 다리에 통증이 발생합니다.<br>전력질주 시 통증과 소모량이 훨씬 높습니다.<br>(달리기 및 전력질주 레벨이 높으면 통증을 줄여줍니다.<br>조용한 발걸음 레벨은 걷기와 밟기 통증을 줄입니다.)",UI_KO
+job,unemployed,백수,vanilla,+10 특성 포인트,UI_KO
+job,fireofficer,소방관,vanilla,,
+job,policeofficer,경찰관,vanilla,,
+job,parkranger,공원 경비원,vanilla,숲과 삼림 사이를 훨씬 더 빠르게 이동할 수 있습니다.<br>모든 함정 제조법을 알고 있습니다.<br>검색 모드에서 훨씬 더 자주 항목을 찾을 수 있습니다.,UI_KO
+job,constructionworker,건축 인부,vanilla,,
+job,securityguard,보안 경비원,vanilla,,
+job,carpenter,목수,vanilla,,
+job,burglar,좀도둑,vanilla,,
+job,chef,주방장,vanilla,"케이크, 파이, 빵, 피자 반죽을 만드는 방법을 알고 있습니다.<br>검색 모드에서 항목을 더 자주 찾을 수 있습니다.",UI_KO
+job,repairman,DIY 전문가,vanilla,,
+job,rancher,축산업자,vanilla,,
+job,farmer,농부,vanilla,식물 질병을 치료하기 위해 스프레이를 만드는 방법을 알고 있습니다.<br>검색 모드에서 항목을 더 자주 찾을 수 있습니다.,UI_KO
+job,fisherman,어부,vanilla,"낚싯대를 만들고 고치는 방법, 철사를 되찾는 방법, 어망을 만드는 방법을 알고 있습니다.<br>검색 모드에서 항목을 더 자주 찾을 수 있습니다.",UI_KO
+job,doctor,의사,vanilla,,
+job,veteran,퇴역 군인,vanilla,검색 모드에서 항목을 더 자주 찾을 수 있습니다.,UI_KO
+job,nurse,간호사,vanilla,,
+job,lumberjack,벌목꾼,vanilla,숲과 삼림 사이를 약간 더 빠르게 이동할 수 있습니다.<br>검색 모드에서 항목을 더 자주 찾을 수 있습니다.,UI_KO
+job,fitnessInstructor,피트니스 강사,vanilla,,
+job,burgerflipper,햄버거 조리사,vanilla,,
+job,electrician,전기 기사,vanilla,"발전기를 작동할 수 있습니다.<br>리모컨, 원격 트리거, 타이머 및 임시 라디오를 만드는 방법을 알고 있습니다.",UI_KO
+job,engineer,기술자,vanilla,함정과 폭발물을 만들 수 있습니다.<br>다양한 폭탄과 소음 발생기를 만드는 방법을 알고 있습니다.,UI_KO
+job,metalworker,용접공,vanilla,채집한 금속을 용접하여 아이템과 바리케이드를 만들 수 있습니다.<br>모든 금속 가공법을 알고 있습니다.,UI_KO
+job,smither,대장장이,vanilla,,
+job,mechanics,자동차 정비공,vanilla,,
+job,tailorProfession,재단사,UI_KO,,
+job,deliverymanocc,배달부,UI_KO,,
+job,loaderocc,상하차 인부,UI_KO,,
+job,truckerocc,트럭 운전사,UI_KO,,
+job,soldierocc,군인,UI_KO,검색 모드에서 항목을 더 자주 찾을 수 있습니다.,UI_KO
+job,botanistocc,식물학자,UI_KO,약초학에 능숙합니다.<br>검색 모드에서 훨씬 더 자주 아이템을 찾을 수 있습니다.,UI_KO
+job,gravemanocc,무덤 관리인,UI_KO,검색 모드에서 항목을 더 자주 찾을 수 있습니다.,UI_KO
+job,dancerocc,댄서,UI_KO,,
+job,priestocc,성직자,UI_KO,정신 상태를 개선하기 위해 기도문을 쓸 수 있습니다.,UI_KO
+job,heavyathinstructorocc,역도 강사,UI_KO,,
+job,detectiveocc,탐정,UI_KO,검색 모드에서 훨씬 더 자주 항목을 찾을 수 있습니다.,UI_KO
+job,teacherocc,학교 교사,UI_KO,,
+job,cleanermanocc,관리인,UI_KO,검색 모드에서 항목을 더 자주 찾을 수 있습니다.,UI_KO
+job,stuntmanocc,스턴트맨,UI_KO,극적인 상황을 선호합니다.,UI_KO
+job,gasstationoperatorocc,주유소 직원,UI_KO,,
+job,campcounsocc,캠프 카운슬러,UI_KO,"낚싯대를 만들고 고치는 방법, 철사를 되찾는 방법을 알고 있습니다.<br>검색 모드에서 항목을 훨씬 더 자주 찾을 수 있습니다.",UI_KO
+job,dragracerocc,드래그 레이서,UI_KO,고속 운전을 선호합니다.,UI_KO
+job,junkyardworkerocc,폐차장 직원,UI_KO,약간의 금속 가공법을 알고 있습니다.<br>검색 모드에서 훨씬 더 자주 항목을 찾을 수 있습니다.,UI_KO
+job,lifeguardocc,인명 구조원,UI_KO,,
+job,demoworkerocc,철거 작업자,UI_KO,,
+job,butcherocc,푸줏간,UI_KO,,
+job,paparazziocc,파파라치,UI_KO,,
+job,minerocc,광부,UI_KO,,
+job,cashierocc,상점 직원,UI_KO,,
+job,criminalocc,범죄자,UI_KO,,
+job,animalcontrolofficerocc,동물 통제 책임자,UI_KO,모든 함정 제조법을 알고 있습니다.<br>검색 모드에서 아이템을 더 자주 찾을 수 있습니다.,UI_KO
+job,hunterocc,사냥꾼,csv,,
+job,veterinarianocc,수의사,csv,,
